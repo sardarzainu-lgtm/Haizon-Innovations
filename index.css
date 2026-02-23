@@ -1050,12 +1050,14 @@ p {
   transition: opacity 0.7s ease;
 }
 
-.card-back:hover {
+.card-back:hover,
+.card-back.touch-active {
   transform: skewY(-8deg) translateX(0) translateY(-50px);
   filter: grayscale(0%);
 }
 
-.card-back:hover::before {
+.card-back:hover::before,
+.card-back.touch-active::before {
   opacity: 0;
 }
 
@@ -1074,12 +1076,14 @@ p {
   transition: opacity 0.7s ease;
 }
 
-.card-middle:hover {
+.card-middle:hover,
+.card-middle.touch-active {
   transform: skewY(-8deg) translateX(50px) translateY(0);
   filter: grayscale(0%);
 }
 
-.card-middle:hover::before {
+.card-middle:hover::before,
+.card-middle.touch-active::before {
   opacity: 0;
 }
 
@@ -1089,7 +1093,8 @@ p {
   border-color: rgba(93, 109, 126, 0.2);
 }
 
-.card-front:hover {
+.card-front:hover,
+.card-front.touch-active {
   transform: skewY(-8deg) translateX(100px) translateY(60px);
   border-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
@@ -1721,7 +1726,8 @@ p {
   transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.gallery-card:hover .card-image {
+.gallery-card:hover .card-image,
+.gallery-card.touch-active .card-image {
   transform: scale(1.15);
 }
 
@@ -1737,7 +1743,8 @@ p {
   z-index: 2;
 }
 
-.gallery-card:hover .card-canvas {
+.gallery-card:hover .card-canvas,
+.gallery-card.touch-active .card-canvas {
   opacity: 1;
 }
 
@@ -1769,7 +1776,8 @@ p {
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.gallery-card:hover .card-content {
+.gallery-card:hover .card-content,
+.gallery-card.touch-active .card-content {
   transform: translateY(0);
   opacity: 1;
 }
@@ -1800,7 +1808,8 @@ p {
   z-index: 5;
 }
 
-.gallery-card:hover .card-arrow {
+.gallery-card:hover .card-arrow,
+.gallery-card.touch-active .card-arrow {
   opacity: 1;
   transform: translate(0, 0);
 }
@@ -1823,7 +1832,8 @@ p {
   pointer-events: none;
 }
 
-.gallery-card:hover::after {
+.gallery-card:hover::after,
+.gallery-card.touch-active::after {
   opacity: 1;
 }
 
@@ -1840,24 +1850,42 @@ p {
 
 @media (max-width: 640px) {
   .portfolio-wrapper {
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
+    overflow: visible;
   }
   
   .gallery-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
+    overflow: visible;
+    padding: 0.5rem;
   }
   
   .gallery-card {
-    height: 320px;
+    height: 300px;
+    margin: 4px;
+  }
+  
+  /* Fix glow border on mobile */
+  .gallery-card::after {
+    inset: -2px;
+    border-radius: 22px;
   }
   
   .gallery-title {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
   
   .gallery-description {
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+  }
+  
+  .card-category {
+    font-size: 0.85rem;
   }
 }
 
@@ -2042,7 +2070,8 @@ p {
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-.bounce-card:hover {
+.bounce-card:hover,
+.bounce-card.touch-active {
   transform: scale(0.98) rotate(-0.5deg);
   box-shadow: 
     0 25px 60px rgba(0, 0, 0, 0.2),
@@ -2075,7 +2104,8 @@ p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.bounce-card:hover .bounce-card-icon {
+.bounce-card:hover .bounce-card-icon,
+.bounce-card.touch-active .bounce-card-icon {
   transform: scale(1.1) rotate(5deg);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
@@ -3100,42 +3130,42 @@ p {
   }
   
   .orbital-timeline-wrapper {
-    height: 300px;
+    height: 340px;
     margin-bottom: 2rem;
-    overflow: hidden;
+    overflow: visible;
     max-width: 100%;
   }
   
   .orbit-track,
   .orbital-nodes {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
   }
   
-  /* Recalculate node positions for 260px orbit (radius = 130px, center = 130px) */
+  /* Recalculate node positions for 240px orbit (radius = 120px, center = 120px) */
   .orbital-node[data-id="1"] {
-    left: 130px;
+    left: 120px;
     top: 0;
   }
   
   .orbital-node[data-id="2"] {
-    left: 254px;
-    top: 90px;
+    left: 234px;
+    top: 83px;
   }
   
   .orbital-node[data-id="3"] {
-    left: 206px;
-    top: 235px;
+    left: 191px;
+    top: 217px;
   }
   
   .orbital-node[data-id="4"] {
-    left: 54px;
-    top: 235px;
+    left: 49px;
+    top: 217px;
   }
   
   .orbital-node[data-id="5"] {
     left: 6px;
-    top: 90px;
+    top: 83px;
   }
   
   .orbital-core {
@@ -3204,7 +3234,11 @@ p {
   }
   
   .orbital-title {
-    font-size: 1.375rem;
+    font-size: 25px;
+  }
+
+  .carousel-dots {
+    margin-bottom: 15px;
   }
   
   .orbital-subtitle {
@@ -3212,8 +3246,8 @@ p {
   }
   
   .orbital-timeline-wrapper {
-    height: 280px;
-    overflow: hidden;
+    height: 300px;
+    overflow: visible;
   }
   
   .orbit-track,
@@ -3225,27 +3259,27 @@ p {
   /* Recalculate node positions for 200px orbit (radius = 100px, center = 100px) */
   .orbital-node[data-id="1"] {
     left: 100px;
-    top: 0;
+    top: 5px;
   }
   
   .orbital-node[data-id="2"] {
-    left: 195px;
-    top: 69px;
+    left: 190px;
+    top: 72px;
   }
   
   .orbital-node[data-id="3"] {
-    left: 159px;
-    top: 181px;
+    left: 156px;
+    top: 175px;
   }
   
   .orbital-node[data-id="4"] {
-    left: 41px;
-    top: 181px;
+    left: 44px;
+    top: 175px;
   }
   
   .orbital-node[data-id="5"] {
-    left: 5px;
-    top: 69px;
+    left: 10px;
+    top: 72px;
   }
   
   .orbital-core {
@@ -4551,7 +4585,6 @@ p {
   .container,
   .features,
   .services,
-  .portfolio,
   .about-premium,
   .testimonials-circular,
   .orbital-approach,
@@ -4560,6 +4593,18 @@ p {
   .footer {
     overflow-x: hidden;
     max-width: 100vw;
+  }
+  
+  /* Portfolio needs visible overflow for card glow effects */
+  .portfolio {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  .portfolio-wrapper {
+    overflow: visible;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   
   .container {
@@ -4576,8 +4621,12 @@ p {
   
   /* Fix orbital timeline */
   .orbital-timeline-wrapper {
-    overflow: hidden;
+    overflow: visible;
     max-width: 100%;
+  }
+  
+  .orbital-approach {
+    overflow: hidden;
   }
   
   /* Fix testimonials */
@@ -4591,9 +4640,10 @@ p {
     overflow: hidden;
   }
   
-  /* Fix gallery */
+  /* Fix gallery - allow overflow for glow effects */
   .gallery-grid {
-    overflow: hidden;
+    overflow: visible;
+    padding: 0.5rem;
   }
   
   /* Fix bounce cards */

@@ -1130,3 +1130,112 @@ const initBouncyCards = () => {
 };
 
 document.addEventListener('DOMContentLoaded', initBouncyCards);
+
+// ===================================
+// Mobile Touch Support for Stacked Cards
+// ===================================
+const initMobileStackedCards = () => {
+    const displayCards = document.querySelectorAll('.display-card');
+    
+    if (!displayCards.length) return;
+    
+    // Check if device is touch-enabled
+    const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+    
+    if (!isTouchDevice) return;
+    
+    displayCards.forEach(card => {
+        // Add active class on touch
+        card.addEventListener('touchstart', (e) => {
+            // Remove active from all cards first
+            displayCards.forEach(c => c.classList.remove('touch-active'));
+            // Add active to this card
+            card.classList.add('touch-active');
+        }, { passive: true });
+        
+        // Also handle click for hybrid devices
+        card.addEventListener('click', (e) => {
+            displayCards.forEach(c => c.classList.remove('touch-active'));
+            card.classList.add('touch-active');
+        });
+    });
+    
+    // Remove active when tapping outside
+    document.addEventListener('touchstart', (e) => {
+        if (!e.target.closest('.stacked-cards')) {
+            displayCards.forEach(c => c.classList.remove('touch-active'));
+        }
+    }, { passive: true });
+};
+
+document.addEventListener('DOMContentLoaded', initMobileStackedCards);
+
+// ===================================
+// Mobile Touch Support for Gallery Cards
+// ===================================
+const initMobileGalleryCards = () => {
+    const galleryCards = document.querySelectorAll('.gallery-card');
+    
+    if (!galleryCards.length) return;
+    
+    const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+    
+    if (!isTouchDevice) return;
+    
+    galleryCards.forEach(card => {
+        card.addEventListener('touchstart', () => {
+            galleryCards.forEach(c => c.classList.remove('touch-active'));
+            card.classList.add('touch-active');
+        }, { passive: true });
+        
+        card.addEventListener('click', () => {
+            if (!card.classList.contains('touch-active')) {
+                galleryCards.forEach(c => c.classList.remove('touch-active'));
+                card.classList.add('touch-active');
+            }
+        });
+    });
+    
+    document.addEventListener('touchstart', (e) => {
+        if (!e.target.closest('.gallery-card')) {
+            galleryCards.forEach(c => c.classList.remove('touch-active'));
+        }
+    }, { passive: true });
+};
+
+document.addEventListener('DOMContentLoaded', initMobileGalleryCards);
+
+// ===================================
+// Mobile Touch Support for Bounce Cards
+// ===================================
+const initMobileBounceCards = () => {
+    const bounceCards = document.querySelectorAll('.bounce-card');
+    
+    if (!bounceCards.length) return;
+    
+    const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+    
+    if (!isTouchDevice) return;
+    
+    bounceCards.forEach(card => {
+        card.addEventListener('touchstart', () => {
+            bounceCards.forEach(c => c.classList.remove('touch-active'));
+            card.classList.add('touch-active');
+        }, { passive: true });
+        
+        card.addEventListener('click', () => {
+            if (!card.classList.contains('touch-active')) {
+                bounceCards.forEach(c => c.classList.remove('touch-active'));
+                card.classList.add('touch-active');
+            }
+        });
+    });
+    
+    document.addEventListener('touchstart', (e) => {
+        if (!e.target.closest('.bounce-card')) {
+            bounceCards.forEach(c => c.classList.remove('touch-active'));
+        }
+    }, { passive: true });
+};
+
+document.addEventListener('DOMContentLoaded', initMobileBounceCards);
