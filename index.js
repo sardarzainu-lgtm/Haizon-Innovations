@@ -1239,3 +1239,90 @@ const initMobileBounceCards = () => {
 };
 
 document.addEventListener('DOMContentLoaded', initMobileBounceCards);
+
+// ===================================
+// Industries Showcase - Cursor Following Image Preview
+// ===================================
+const initIndustriesShowcase = () => {
+    const showcase = document.getElementById('industriesShowcase');
+    const imagePreview = document.getElementById('industryImagePreview');
+    const previewImg = document.getElementById('industryPreviewImg');
+    const industryItems = document.querySelectorAll('.industry-item');
+    
+    if (!showcase || !imagePreview || !previewImg || !industryItems.length) return;
+    
+    // Check if touch device - disable image preview on mobile
+    const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+    if (isTouchDevice) {
+        imagePreview.style.display = 'none';
+        return;
+    }
+    
+    let mouseX = 0;
+    let mouseY = 0;
+    let smoothX = 0;
+    let smoothY = 0;
+    let isHovering = false;
+    let animationId = null;
+    
+    // Linear interpolation for smooth movement
+    const lerp = (start, end, factor) => start + (end - start) * factor;
+    
+    // Animation loop for smooth cursor following
+    const animate = () => {
+        smoothX = lerp(smoothX, mouseX, 0.12);
+        smoothY = lerp(smoothY, mouseY, 0.12);
+        
+        // Position the preview - offset from cursor
+        imagePreview.style.left = `${smoothX + 20}px`;
+        imagePreview.style.top = `${smoothY - 100}px`;
+        
+        animationId = requestAnimationFrame(animate);
+    };
+    
+    // Start animation
+    animationId = requestAnimationFrame(animate);
+    
+    // Track mouse position globally
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+    
+    // Handle hover on each industry item
+    industryItems.forEach((item) => {
+        const imageUrl = item.getAttribute('data-image');
+        
+        item.addEventListener('mouseenter', () => {
+            if (!imageUrl) return;
+            
+            // Preload and set image
+            previewImg.src = imageUrl;
+            previewImg.alt = item.querySelector('.industry-item-title')?.textContent || '';
+            
+            // Show preview with animation
+            isHovering = true;
+            imagePreview.classList.add('visible');
+        });
+        
+        item.addEventListener('mouseleave', () => {
+            isHovering = false;
+            imagePreview.classList.remove('visible');
+        });
+    });
+    
+    // Hide preview when leaving the showcase area
+    showcase.addEventListener('mouseleave', () => {
+        isHovering = false;
+        imagePreview.classList.remove('visible');
+    });
+    
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', () => {
+        if (animationId) {
+            cancelAnimationFrame(animationId);
+        }
+    });
+};
+
+document.addEventListener('DOMContentLoaded', initIndustriesShowcase);

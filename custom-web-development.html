@@ -19,7 +19,6 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="custom-web-dev.css">
 </head>
 
 <body>
@@ -67,126 +66,337 @@
             <div class="webdev-browser-frame" style="width: 300px; height: 200px; top: 15%; left: 5%; animation-delay: 0s;"></div>
             <div class="webdev-browser-frame" style="width: 250px; height: 180px; bottom: 20%; right: 8%; animation-delay: 5s;"></div>
         </div>
-        <div class="container">
-            <div class="webdev-hero-content">
-                <h1 class="webdev-hero-title">Custom Web Development</h1>
-                <p class="webdev-hero-description">
+        <div class="webdev-hero-container">
+            <div class="webdev-hero-content-wrapper">
+                <!-- Badge -->
+                <div class="webdev-hero-badge fade-up" data-delay="0.5">
+                    <svg class="badge-icon" width="8" height="8" viewBox="0 0 8 8" fill="currentColor">
+                        <circle cx="4" cy="4" r="4" fill="currentColor" />
+                    </svg>
+                    <span>HAIZON INNOVATIONS</span>
+                </div>
+
+                <!-- Title -->
+                <h1 class="webdev-hero-title fade-up" data-delay="0.7">
+                    <span class="webdev-title-line-1">Custom Web</span>
+                    <span class="webdev-title-line-2">Development</span>
+                </h1>
+
+                <!-- Description -->
+                <p class="webdev-hero-description fade-up" data-delay="0.9">
                     Unlock your business's full potential with our Custom Web Development Services. Tailored solutions designed to boost efficiency, streamline processes, and drive growth.
                 </p>
-                <a href="index.html#contact" class="btn btn-primary webdev-cta">Let's Talk</a>
+
+                <!-- CTA -->
+                <div class="webdev-hero-cta fade-up" data-delay="1.1">
+                    <a href="index.html#contact" class="btn btn-primary">Let's Talk</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Revolutionize Section -->
-    <section class="webdev-revolutionize">
+    <!-- Revolutionize Section - Premium Design -->
+    <section class="webdev-hero-premium">
         <div class="container">
-            <div class="webdev-revolutionize-content">
-                <div class="webdev-revolutionize-text">
-                    <div class="section-accent"></div>
-                    <h2 class="webdev-section-title">Revolutionize Your Business With Our Web Development Services</h2>
-                    <p>
-                        In today's digital landscape, having a strong online presence is crucial for business success. Our custom web development services are designed to help you stand out from the competition and achieve your business goals.
+            <div class="hero-premium-content">
+                <!-- Left Side - Text Content -->
+                <div class="hero-premium-text">
+                    <span class="section-subtitle">
+                        Production ready in days
+                    </span>
+                    <h1 class="hero-premium-title">
+                        Building Future Ready<br>
+                        Websites That Drive<br>
+                        <span class="title-italic">Business Growth</span>
+                    </h1>
+                    <p class="hero-premium-desc">
+                        We build scalable, future-ready digital platforms that empower businesses with high-performance experiences. Our strategic approach aligns technology with your objectives delivering <span class="highlight-text">MEASURABLE RESULTS</span> across all devices.
                     </p>
-                    <p>
-                        We understand that every business is unique, which is why we take a personalized approach to web development. Our team of experienced developers works closely with you to understand your specific needs, challenges, and objectives.
-                    </p>
-                    <p>
-                        Whether you're looking to build a new website from scratch, redesign an existing one, or add new features and functionality, we have the expertise and resources to deliver exceptional results.
-                    </p>
-                    <a href="index.html#contact" class="btn btn-primary">Get Started</a>
+                    <a href="index.html#contact" class="hero-premium-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        Get Started
+                    </a>
                 </div>
-                <div class="webdev-revolutionize-image">
-                    <div class="webdev-image-wrapper">
-                        <div class="webdev-image-placeholder">
-                            <div class="webdev-screens">
-                                <div class="webdev-screen webdev-screen-1"></div>
-                                <div class="webdev-screen webdev-screen-2"></div>
-                                <div class="webdev-screen webdev-screen-3"></div>
-                            </div>
+
+                <!-- Right Side - Web Development Visualization -->
+                <div class="hero-premium-visual">
+                    <!-- Development Stack Badge -->
+                    <div class="orchestration-badge">
+                        <span class="orch-dot"></span>
+                        Full-Stack Development
+                    </div>
+
+                    <!-- Central Hub - Code/Browser -->
+                    <div class="central-hub">
+                        <div class="hub-ring"></div>
+                        <div class="hub-core">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
                         </div>
-                        <div class="webdev-accent-shape"></div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Services Section -->
-    <section class="webdev-services">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-accent"></div>
-                <h2 class="webdev-section-title">Our Custom Web Development Services</h2>
-            </div>
-            <div class="webdev-services-grid">
-                <div class="webdev-service-card">
-                    <div class="webdev-service-icon">
+                    <!-- Floating Cards - Left Side (Frontend Stack) -->
+                    <div class="float-card card-mysql">
+                        <div class="card-icon-small icon-react">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="12" r="2.5"/>
+                                <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1"/>
+                                <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1" transform="rotate(60 12 12)"/>
+                                <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1" transform="rotate(120 12 12)"/>
+                            </svg>
+                        </div>
+                        <span>React.js</span>
+                    </div>
+
+                    <div class="float-card card-snowflake">
+                        <div class="card-icon-small icon-node">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l6.9 3.45L12 11.09 5.1 7.63 12 4.18zM4 8.82l7 3.5v7.36l-7-3.5V8.82zm9 10.86v-7.36l7-3.5v7.36l-7 3.5z"/>
+                            </svg>
+                        </div>
+                        <span>Node.js</span>
+                    </div>
+
+                    <div class="float-card card-jira">
+                        <div class="card-icon-small icon-ts">
+                            <span class="ts-badge">TS</span>
+                        </div>
+                        <span>TypeScript</span>
+                        <div class="card-status-dot active"></div>
+                    </div>
+
+                    <div class="float-card card-pmo">
+                        <div class="card-icon-small icon-api">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16v16H4z"/>
+                                <path d="M9 9h6v6H9z"/>
+                                <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/>
+                            </svg>
+                        </div>
+                        <span>REST API</span>
+                    </div>
+
+                    <!-- Floating Icons - Right Side (Technologies) -->
+                    <div class="float-icon icon-star">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18"/>
+                            <path d="M9 21V9"/>
                         </svg>
                     </div>
-                    <h3>Website Design</h3>
-                    <p>Create stunning, user-friendly websites that captivate your audience and drive conversions.</p>
-                </div>
-                <div class="webdev-service-card">
-                    <div class="webdev-service-icon">
+
+                    <div class="float-icon icon-spiral">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="4" width="20" height="16" rx="2"/>
-                            <path d="M6 8h12M6 12h12M6 16h8"/>
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 2v10l4.5 4.5"/>
                         </svg>
                     </div>
-                    <h3>Website Development</h3>
-                    <p>Build robust, scalable web applications using the latest technologies and best practices.</p>
-                </div>
-                <div class="webdev-service-card">
-                    <div class="webdev-service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-                            <line x1="3" y1="6" x2="21" y2="6"/>
-                            <path d="M16 10a4 4 0 0 1-8 0"/>
+
+                    <div class="float-icon icon-ai">
+                        <span>UI</span>
+                    </div>
+
+                    <div class="float-icon icon-diamond">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                         </svg>
                     </div>
-                    <h3>E-Commerce Development</h3>
-                    <p>Launch powerful online stores with seamless shopping experiences and secure payment processing.</p>
-                </div>
-                <div class="webdev-service-card">
-                    <div class="webdev-service-icon">
+
+                    <div class="float-icon icon-spark">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+
+                    <div class="float-icon icon-cube">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <ellipse cx="12" cy="5" rx="9" ry="3"/>
                             <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
                             <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
                         </svg>
                     </div>
-                    <h3>API & Database Integration</h3>
-                    <p>Seamlessly integrate third-party APIs and optimize database performance for maximum efficiency.</p>
-                </div>
-                <div class="webdev-service-card">
-                    <div class="webdev-service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                            <polyline points="14 2 14 8 20 8"/>
-                            <line x1="16" y1="13" x2="8" y2="13"/>
-                            <line x1="16" y1="17" x2="8" y2="17"/>
-                            <polyline points="10 9 9 9 8 9"/>
-                        </svg>
+
+                    <!-- Code Preview Card - Web Development -->
+                    <div class="float-card card-code">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-filename">App.tsx</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line"><span class="code-keyword">import</span> <span class="code-class">React</span> <span class="code-keyword">from</span> <span class="code-string">'react'</span>;</div>
+                            <div class="code-line"></div>
+                            <div class="code-line"><span class="code-keyword">export const</span> <span class="code-func">App</span> = () => {</div>
+                            <div class="code-line indent"><span class="code-keyword">return</span> (</div>
+                            <div class="code-line indent2"><span class="code-tag">&lt;div</span> <span class="code-attr">className</span>=<span class="code-string">"app"</span><span class="code-tag">&gt;</span></div>
+                            <div class="code-line indent2"><span class="code-tag">&lt;/div&gt;</span></div>
+                            <div class="code-line indent">);</div>
+                            <div class="code-line">};</div>
+                        </div>
                     </div>
-                    <h3>CMS Development</h3>
-                    <p>Custom content management systems that give you full control over your website content.</p>
+
+                    <!-- Connection Lines -->
+                    <svg class="connection-lines" viewBox="0 0 500 400">
+                        <path class="conn-line" d="M100,120 Q200,100 220,180"/>
+                        <path class="conn-line" d="M100,200 Q180,200 220,200"/>
+                        <path class="conn-line" d="M280,180 Q350,120 380,100"/>
+                        <path class="conn-line" d="M280,200 Q350,200 400,180"/>
+                        <path class="conn-line" d="M250,260 Q300,320 350,340"/>
+                    </svg>
                 </div>
-                <div class="webdev-service-card">
-                    <div class="webdev-service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
-                        </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section - Carousel Cards -->
+    <section class="webdev-services-carousel">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">What We Offer</p>
+                <h2>Our Custom Web Development Services</h2>
+                <p>End-to-end web solutions tailored to your business needs, from design to deployment</p>
+            </div>
+            
+            <!-- Services Carousel -->
+            <div class="services-carousel-wrapper">
+                <div class="services-carousel" id="servicesCarousel">
+                    <div class="services-carousel-track" id="servicesTrack">
+                        <!-- Card 1 - Website Design -->
+                        <div class="service-carousel-card gradient-purple">
+                            <div class="service-card-top">
+                                <span class="service-card-number">( 001 )</span>
+                                <div class="service-card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                                        <path d="M2 2l7.586 7.586"/>
+                                        <circle cx="11" cy="11" r="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="service-card-bottom">
+                                <h3 class="service-card-title">Website Design</h3>
+                                <p class="service-card-desc">Create stunning, user-friendly websites that captivate your audience and drive conversions.</p>
+                            </div>
+                            <div class="service-card-overlay"></div>
+                        </div>
+
+                        <!-- Card 2 - Website Development -->
+                        <div class="service-carousel-card gradient-green">
+                            <div class="service-card-top">
+                                <span class="service-card-number">( 002 )</span>
+                                <div class="service-card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <polyline points="16 18 22 12 16 6"/>
+                                        <polyline points="8 6 2 12 8 18"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="service-card-bottom">
+                                <h3 class="service-card-title">Website Development</h3>
+                                <p class="service-card-desc">Build robust, scalable web applications using the latest technologies and best practices.</p>
+                            </div>
+                            <div class="service-card-overlay"></div>
+                        </div>
+
+                        <!-- Card 3 - E-Commerce -->
+                        <div class="service-carousel-card gradient-amber">
+                            <div class="service-card-top">
+                                <span class="service-card-number">( 003 )</span>
+                                <div class="service-card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                                        <line x1="3" y1="6" x2="21" y2="6"/>
+                                        <path d="M16 10a4 4 0 0 1-8 0"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="service-card-bottom">
+                                <h3 class="service-card-title">E-Commerce Development</h3>
+                                <p class="service-card-desc">Launch powerful online stores with seamless shopping experiences and secure payment processing.</p>
+                            </div>
+                            <div class="service-card-overlay"></div>
+                        </div>
+
+                        <!-- Card 4 - API & Database -->
+                        <div class="service-carousel-card gradient-blue">
+                            <div class="service-card-top">
+                                <span class="service-card-number">( 004 )</span>
+                                <div class="service-card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="service-card-bottom">
+                                <h3 class="service-card-title">API & Database Integration</h3>
+                                <p class="service-card-desc">Seamlessly integrate third-party APIs and optimize database performance for maximum efficiency.</p>
+                            </div>
+                            <div class="service-card-overlay"></div>
+                        </div>
+
+                        <!-- Card 5 - CMS Development -->
+                        <div class="service-carousel-card gradient-rose">
+                            <div class="service-card-top">
+                                <span class="service-card-number">( 005 )</span>
+                                <div class="service-card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                        <polyline points="14 2 14 8 20 8"/>
+                                        <line x1="16" y1="13" x2="8" y2="13"/>
+                                        <line x1="16" y1="17" x2="8" y2="17"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="service-card-bottom">
+                                <h3 class="service-card-title">CMS Development</h3>
+                                <p class="service-card-desc">Custom content management systems that give you full control over your website content.</p>
+                            </div>
+                            <div class="service-card-overlay"></div>
+                        </div>
+
+                        <!-- Card 6 - Web App Development -->
+                        <div class="service-carousel-card gradient-slate">
+                            <div class="service-card-top">
+                                <span class="service-card-number">( 006 )</span>
+                                <div class="service-card-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                        <line x1="8" y1="21" x2="16" y2="21"/>
+                                        <line x1="12" y1="17" x2="12" y2="21"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="service-card-bottom">
+                                <h3 class="service-card-title">Web App Development</h3>
+                                <p class="service-card-desc">Develop powerful web applications that work seamlessly across all devices and platforms.</p>
+                            </div>
+                            <div class="service-card-overlay"></div>
+                        </div>
                     </div>
-                    <h3>Web App Development</h3>
-                    <p>Develop powerful web applications that work seamlessly across all devices and platforms.</p>
                 </div>
+
+                <!-- Carousel Navigation -->
+                <button class="carousel-nav-btn carousel-prev" id="servicesPrev" aria-label="Previous slide">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <button class="carousel-nav-btn carousel-next" id="servicesNext" aria-label="Next slide">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+
+                <!-- Carousel Dots -->
+                <div class="carousel-dots" id="servicesDots"></div>
             </div>
         </div>
     </section>
@@ -195,8 +405,9 @@
     <section class="webdev-features">
         <div class="container">
             <div class="section-header">
-                <div class="section-accent"></div>
-                <h2 class="webdev-section-title">Our Custom Web Development Features</h2>
+                <p class="section-subtitle">Why Choose Us</p>
+                <h2>Our Custom Web Development Features</h2>
+                <p>Cutting-edge capabilities that set your digital presence apart from the competition</p>
             </div>
             <div class="webdev-features-grid">
                 <div class="webdev-feature-card">
@@ -243,8 +454,9 @@
     <section class="webdev-platforms">
         <div class="container">
             <div class="section-header">
-                <div class="section-accent"></div>
-                <h2 class="webdev-section-title">Top Custom Web Development Platforms We Use</h2>
+                <p class="section-subtitle">Our Tech Stack</p>
+                <h2>Top Custom Web Development Platforms We Use</h2>
+                <p>Industry-leading technologies and frameworks that power exceptional digital experiences</p>
             </div>
             <div class="webdev-platforms-grid">
                 <div class="webdev-platform-logo">
@@ -270,8 +482,9 @@
     <section class="webdev-process">
         <div class="container">
             <div class="section-header">
-                <div class="section-accent"></div>
-                <h2 class="webdev-section-title">The Custom Web Development Process</h2>
+                <p class="section-subtitle">How We Work</p>
+                <h2>The Custom Web Development Process</h2>
+                <p>A streamlined approach that transforms your vision into a powerful digital reality</p>
             </div>
             <div class="webdev-process-steps">
                 <div class="webdev-process-step">
@@ -324,8 +537,9 @@
     <section class="webdev-why-choose">
         <div class="container">
             <div class="section-header">
-                <div class="section-accent"></div>
-                <h2 class="webdev-section-title">Why Choose HAIZON INNOVATIONS</h2>
+                <p class="section-subtitle">Our Advantage</p>
+                <h2>Why Choose HAIZON INNOVATIONS</h2>
+                <p>Trusted expertise and proven results that drive your business forward</p>
             </div>
             <div class="webdev-why-grid">
                 <div class="webdev-why-card">
@@ -371,48 +585,136 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- FAQ Section - Accordion Style -->
     <section class="webdev-faq">
         <div class="container">
             <div class="section-header">
-                <div class="section-accent"></div>
-                <h2 class="webdev-section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Got Questions?</p>
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our custom web development services</p>
             </div>
-            <div class="webdev-faq-list">
-                <div class="webdev-faq-item">
-                    <div class="webdev-faq-question">
-                        <h3>How does outsourcing to a web development company work?</h3>
-                        <span class="faq-icon">+</span>
-                    </div>
-                    <div class="webdev-faq-answer">
-                        <p>Outsourcing web development involves partnering with a specialized company to handle your project. We work closely with you to understand your requirements, provide regular updates, and deliver a complete solution that meets your business needs.</p>
+            <div class="faq-accordion" id="faqAccordion">
+                <!-- FAQ Item 1 -->
+                <div class="faq-accordion-item active">
+                    <button class="faq-accordion-trigger" aria-expanded="true">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <path d="M12 17h.01"/>
+                            </svg>
+                            <span class="faq-question-text">How does outsourcing to a web development company work?</span>
+                        </div>
+                        <div class="faq-chevron-wrap">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-card">
+                                <p>Outsourcing web development involves partnering with a specialized company to handle your project. We work closely with you to understand your requirements, provide regular updates, and deliver a complete solution that meets your business needs.</p>
+                                <div class="faq-message-icon-wrap">
+                                    <svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="webdev-faq-item">
-                    <div class="webdev-faq-question">
-                        <h3>What technologies do you use for web development?</h3>
-                        <span class="faq-icon">+</span>
-                    </div>
-                    <div class="webdev-faq-answer">
-                        <p>We use modern technologies including React, Node.js, Vue.js, .NET, and Laravel. Our team selects the best technology stack based on your project requirements and business goals.</p>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <path d="M12 17h.01"/>
+                            </svg>
+                            <span class="faq-question-text">What technologies do you use for web development?</span>
+                        </div>
+                        <div class="faq-chevron-wrap">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-card">
+                                <p>We use modern technologies including React, Node.js, Vue.js, .NET, and Laravel. Our team selects the best technology stack based on your project requirements and business goals.</p>
+                                <div class="faq-message-icon-wrap">
+                                    <svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="webdev-faq-item">
-                    <div class="webdev-faq-question">
-                        <h3>How long does it take to develop a custom website?</h3>
-                        <span class="faq-icon">+</span>
-                    </div>
-                    <div class="webdev-faq-answer">
-                        <p>The timeline depends on the complexity and scope of your project. A simple website typically takes 2-4 weeks, while complex web applications may take 2-6 months. We provide detailed timelines during the consultation phase.</p>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <path d="M12 17h.01"/>
+                            </svg>
+                            <span class="faq-question-text">How long does it take to develop a custom website?</span>
+                        </div>
+                        <div class="faq-chevron-wrap">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-card">
+                                <p>The timeline depends on the complexity and scope of your project. A simple website typically takes 2-4 weeks, while complex web applications may take 2-6 months. We provide detailed timelines during the consultation phase.</p>
+                                <div class="faq-message-icon-wrap">
+                                    <svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="webdev-faq-item">
-                    <div class="webdev-faq-question">
-                        <h3>Do you provide ongoing maintenance and support?</h3>
-                        <span class="faq-icon">+</span>
-                    </div>
-                    <div class="webdev-faq-answer">
-                        <p>Yes, we offer comprehensive maintenance and support services to ensure your website continues to perform optimally. This includes updates, security patches, bug fixes, and feature enhancements.</p>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <path d="M12 17h.01"/>
+                            </svg>
+                            <span class="faq-question-text">Do you provide ongoing maintenance and support?</span>
+                        </div>
+                        <div class="faq-chevron-wrap">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-card">
+                                <p>Yes, we offer comprehensive maintenance and support services to ensure your website continues to perform optimally. This includes updates, security patches, bug fixes, and feature enhancements.</p>
+                                <div class="faq-message-icon-wrap">
+                                    <svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
