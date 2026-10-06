@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="HAIZON INNOVATIONS - Machine Learning, Deep Learning & NLP. Build intelligent models that learn from data, recognize patterns, understand language, and deliver business value.">
+    <meta name="keywords"
+        content="machine learning, deep learning, NLP, computer vision, predictive models, HAIZON INNOVATIONS">
+    <title>Machine Learning, Deep Learning &amp; NLP | HAIZON INNOVATIONS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="page-ml">
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="HAIZON INNOVATIONS" class="logo-img logo" width="224" height="56" decoding="async">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li class="nav-dropdown">
+                    <a href="index.html#services">Services <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="automation.html">AI &amp; Business Automation</a></li>
+                        <li><a href="machine-learning.html" aria-current="page">Machine Learning, Deep Learning &amp; NLP</a></li>
+                        <li><a href="custom-web-development.html">Custom Web Development</a></li>
+                        <li><a href="software-solutions.html">Software Solutions</a></li>
+                        <li><a href="data-science.html">Data Science &amp; Analytics</a></li>
+                        <li><a href="ui-ux.html">UI/UX &amp; Digital Products</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Get Started</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="webdev-hero webdev-hero-stable ml-hero" id="home">
+        <div class="webdev-hero-background ml-hero-background" id="heroBackground">
+            <div class="ml-hero-static" aria-hidden="true">
+                <svg class="ml-hero-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <defs>
+                        <radialGradient id="mlHeroGlow" cx="50%" cy="45%" r="40%">
+                            <stop offset="0%" stop-color="#D4A84B" stop-opacity="0.2"/>
+                            <stop offset="50%" stop-color="#5D6D7E" stop-opacity="0.1"/>
+                            <stop offset="100%" stop-color="#0a0a0c" stop-opacity="0"/>
+                        </radialGradient>
+                    </defs>
+                    <rect width="1440" height="900" fill="#0a0a0c"/>
+                    <ellipse cx="720" cy="400" rx="480" ry="300" fill="url(#mlHeroGlow)"/>
+                    <!-- Input nodes -->
+                    <g class="ml-hero-nodes" fill="#D4A84B">
+                        <circle cx="320" cy="220" r="5"/><circle cx="320" cy="300" r="5"/><circle cx="320" cy="380" r="5"/><circle cx="320" cy="460" r="5"/><circle cx="320" cy="540" r="5"/>
+                    </g>
+                    <g class="ml-hero-nodes" fill="#7B8B9A">
+                        <circle cx="520" cy="260" r="6"/><circle cx="520" cy="340" r="6"/><circle cx="520" cy="420" r="6"/><circle cx="520" cy="500" r="6"/>
+                    </g>
+                    <g class="ml-hero-nodes" fill="#D4A84B">
+                        <circle cx="720" cy="300" r="7"/><circle cx="720" cy="400" r="7"/><circle cx="720" cy="500" r="7"/>
+                    </g>
+                    <g class="ml-hero-nodes" fill="#E4C06B">
+                        <circle cx="920" cy="340" r="6"/><circle cx="920" cy="420" r="6"/><circle cx="920" cy="500" r="6"/>
+                    </g>
+                    <g class="ml-hero-nodes" fill="#D4A84B">
+                        <circle cx="1120" cy="360" r="5"/><circle cx="1120" cy="440" r="5"/><circle cx="1120" cy="520" r="5"/>
+                    </g>
+                    <!-- Connections -->
+                    <g class="ml-hero-links" stroke="rgba(212,168,75,0.22)" fill="none" stroke-width="1">
+                        <path id="mlP1" d="M320,220 C420,240 460,260 520,260"/>
+                        <path id="mlP2" d="M320,380 C420,360 460,340 520,340"/>
+                        <path id="mlP3" d="M320,540 C420,500 460,480 520,500"/>
+                        <path id="mlP4" d="M520,260 C600,280 640,300 720,300"/>
+                        <path id="mlP5" d="M520,420 C600,400 640,400 720,400"/>
+                        <path id="mlP6" d="M720,400 C800,400 840,420 920,420"/>
+                        <path id="mlP7" d="M920,420 C1000,440 1040,440 1120,440"/>
+                        <path d="M520,340 C600,360 640,400 720,400"/>
+                        <path d="M720,300 C800,320 840,340 920,340"/>
+                        <path d="M720,500 C800,480 840,500 920,500"/>
+                        <path d="M920,340 C1000,360 1040,360 1120,360"/>
+                        <path d="M920,500 C1000,500 1040,520 1120,520"/>
+                    </g>
+                    <circle class="ml-hero-particle" r="2.4" fill="#D4A84B"><animateMotion dur="8s" repeatCount="indefinite"><mpath href="#mlP1"/></animateMotion></circle>
+                    <circle class="ml-hero-particle" r="2" fill="#E4C06B"><animateMotion dur="9s" repeatCount="indefinite" begin="1s"><mpath href="#mlP2"/></animateMotion></circle>
+                    <circle class="ml-hero-particle" r="2.2" fill="#D4A84B"><animateMotion dur="10s" repeatCount="indefinite" begin="2s"><mpath href="#mlP5"/></animateMotion></circle>
+                    <circle class="ml-hero-particle" r="2" fill="#7B8B9A"><animateMotion dur="11s" repeatCount="indefinite" begin="0.5s"><mpath href="#mlP7"/></animateMotion></circle>
+                    <g transform="translate(720,400)">
+                        <rect x="-70" y="-28" width="140" height="56" rx="12" fill="rgba(10,10,12,0.9)" stroke="rgba(212,168,75,0.45)" stroke-width="1.5"/>
+                        <text text-anchor="middle" y="6" fill="#fff" font-family="Outfit,sans-serif" font-size="15" font-weight="700">AI MODEL</text>
+                    </g>
+                    <text x="320" y="180" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-family="Outfit,sans-serif" font-size="12" letter-spacing="2">DATA</text>
+                    <text x="1120" y="320" text-anchor="middle" fill="rgba(212,168,75,0.7)" font-family="Outfit,sans-serif" font-size="12" letter-spacing="2">RESULT</text>
+                </svg>
+            </div>
+            <video id="heroVideo" class="webdev-hero-video ml-hero-video" muted loop playsinline preload="none" aria-hidden="true" disablePictureInPicture hidden></video>
+            <div class="webdev-hero-video-overlay ml-hero-overlay"></div>
+        </div>
+        <div class="webdev-hero-container">
+            <div class="webdev-hero-content-wrapper">
+                <div class="webdev-hero-badge">
+                    <svg class="badge-icon" width="8" height="8" viewBox="0 0 8 8" fill="currentColor"><circle cx="4" cy="4" r="4"/></svg>
+                    <span>MACHINE LEARNING • DEEP LEARNING • NLP</span>
+                </div>
+                <h1 class="webdev-hero-title">
+                    <span class="webdev-title-line-1">Turn Data Into</span>
+                    <span class="webdev-title-line-2">Intelligence.</span>
+                </h1>
+                <p class="webdev-hero-description">
+                    Build intelligent systems that learn from data, recognize patterns, understand language, and help businesses make better decisions.
+                </p>
+                <div class="webdev-hero-cta ml-hero-cta">
+                    <a href="#contact" class="btn btn-primary">Build an AI Solution</a>
+                    <a href="#capabilities" class="btn btn-secondary">Explore Our Capabilities</a>
+                </div>
+            </div>
+        </div>
+        <div class="webdev-hero-bottom-overlay"></div>
+    </section>
+
+    <!-- WHAT WE BUILD -->
+    <section class="ml-section ml-section--dark" id="capabilities">
+        <div class="container">
+            <div class="section-header ml-header--light">
+                <p class="section-subtitle">What We Build</p>
+                <h2>Intelligence Built Around Your Data</h2>
+                <p>From predictive models to language understanding and computer vision, we build AI systems designed around real-world problems.</p>
+            </div>
+            <div class="ml-capability-grid">
+                <article class="ml-capability-card">
+                    <div class="ml-capability-icon" aria-hidden="true"><i class="bi bi-graph-up-arrow"></i></div>
+                    <h3>Machine Learning</h3>
+                    <p>Learn from historical data to predict outcomes, classify information, detect anomalies, and support better decisions.</p>
+                    <ul>
+                        <li>Predictive Modeling</li>
+                        <li>Classification</li>
+                        <li>Regression</li>
+                        <li>Recommendation Systems</li>
+                        <li>Anomaly Detection</li>
+                        <li>Forecasting</li>
+                    </ul>
+                </article>
+                <article class="ml-capability-card">
+                    <div class="ml-capability-icon" aria-hidden="true"><i class="bi bi-diagram-3"></i></div>
+                    <h3>Deep Learning</h3>
+                    <p>Build neural networks that learn complex patterns from images, signals, text, and other high-dimensional data.</p>
+                    <ul>
+                        <li>Neural Networks</li>
+                        <li>Computer Vision</li>
+                        <li>Image Classification</li>
+                        <li>Object Detection</li>
+                        <li>Image Segmentation</li>
+                        <li>Custom Deep Learning Models</li>
+                    </ul>
+                </article>
+                <article class="ml-capability-card">
+                    <div class="ml-capability-icon" aria-hidden="true"><i class="bi bi-chat-square-text"></i></div>
+                    <h3>Natural Language Processing</h3>
+                    <p>Build systems that understand, classify, extract, summarize, and work with human language.</p>
+                    <ul>
+                        <li>Text Classification</li>
+                        <li>Sentiment Analysis</li>
+                        <li>Entity Extraction</li>
+                        <li>Text Summarization</li>
+                        <li>Semantic Search</li>
+                        <li>Language Understanding</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATA TO INTELLIGENCE PIPELINE -->
+    <section class="ml-section ml-section--light" id="pipeline">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">The Path</p>
+                <h2>From Raw Data to Intelligent Results</h2>
+                <p>A clear pipeline from preparation through training to deployable intelligence.</p>
+            </div>
+            <ol class="ml-pipeline" aria-label="Data to intelligence pipeline">
+                <li class="ml-pipeline-step">
+                    <span class="ml-pipeline-num">01</span>
+                    <h3>Raw Data</h3>
+                    <p>Tables, images, text, and signals from your operations.</p>
+                </li>
+                <li class="ml-pipeline-step">
+                    <span class="ml-pipeline-num">02</span>
+                    <h3>Data Prep</h3>
+                    <p>Clean, label, and structure data for reliable training.</p>
+                </li>
+                <li class="ml-pipeline-step">
+                    <span class="ml-pipeline-num">03</span>
+                    <h3>Model Training</h3>
+                    <p>Train models that learn patterns relevant to your problem.</p>
+                </li>
+                <li class="ml-pipeline-step">
+                    <span class="ml-pipeline-num">04</span>
+                    <h3>Evaluation</h3>
+                    <p>Validate performance with the right metrics before release.</p>
+                </li>
+                <li class="ml-pipeline-step ml-pipeline-step--result">
+                    <span class="ml-pipeline-num">05</span>
+                    <h3>Intelligent Result</h3>
+                    <p>Predictions, classifications, and understanding you can use.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- MACHINE LEARNING -->
+    <section class="ml-section ml-section--dark ml-split" id="machine-learning">
+        <div class="container">
+            <div class="ml-split-grid">
+                <div class="ml-split-copy">
+                    <p class="section-subtitle">Machine Learning</p>
+                    <h2>Machine Learning That Learns From Your Data</h2>
+                    <p>Use historical patterns to predict, classify, or detect outcomes when enough quality data exists — without promising perfect accuracy.</p>
+                    <ul class="ml-app-list">
+                        <li>Demand Forecasting</li>
+                        <li>Customer Churn Prediction</li>
+                        <li>Fraud Detection</li>
+                        <li>Risk Scoring</li>
+                        <li>Recommendation Systems</li>
+                        <li>Classification</li>
+                        <li>Anomaly Detection</li>
+                    </ul>
+                </div>
+                <div class="ml-flow-card" aria-hidden="true">
+                    <div class="ml-flow-steps">
+                        <span>Historical Data</span>
+                        <span>Feature Engineering</span>
+                        <span>Training</span>
+                        <span>Model</span>
+                        <span class="ml-flow-end">Prediction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEEP LEARNING -->
+    <section class="ml-section ml-section--light ml-split" id="deep-learning">
+        <div class="container">
+            <div class="ml-split-grid ml-split-grid--reverse">
+                <div class="ml-split-copy">
+                    <p class="section-subtitle">Deep Learning</p>
+                    <h2>Deep Learning for Complex Patterns</h2>
+                    <p>Useful when data is high-dimensional or unstructured — images, signals, dense sequences — and layered neural networks can capture structure classical models miss.</p>
+                    <ul class="ml-app-list ml-app-list--dark">
+                        <li>Computer Vision</li>
+                        <li>Image Classification</li>
+                        <li>Object Detection</li>
+                        <li>Segmentation</li>
+                        <li>Medical Imaging</li>
+                        <li>Industrial Inspection</li>
+                        <li>Pattern Recognition</li>
+                        <li>Signal Analysis</li>
+                    </ul>
+                </div>
+                <div class="ml-layers-card" aria-hidden="true">
+                    <span class="ml-layers-label">INPUT</span>
+                    <div class="ml-layer">Neural Layer</div>
+                    <div class="ml-layer">Neural Layer</div>
+                    <div class="ml-layer">Neural Layer</div>
+                    <span class="ml-layers-label ml-layers-label--out">OUTPUT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NLP -->
+    <section class="ml-section ml-section--dark ml-split" id="nlp">
+        <div class="container">
+            <div class="ml-split-grid">
+                <div class="ml-split-copy">
+                    <p class="section-subtitle">Natural Language Processing</p>
+                    <h2>Teach Software to Understand Language</h2>
+                    <p>From classification to semantic search, NLP turns text into structured understanding — and pairs naturally with knowledge retrieval and automation workflows when you need grounded answers.</p>
+                    <ul class="ml-app-list">
+                        <li>Text Classification</li>
+                        <li>Sentiment Analysis</li>
+                        <li>Document Understanding</li>
+                        <li>Information Extraction</li>
+                        <li>Summarization</li>
+                        <li>Semantic Search</li>
+                        <li>Question Answering</li>
+                        <li>Language Processing</li>
+                    </ul>
+                </div>
+                <div class="ml-nlp-card" aria-hidden="true">
+                    <div class="ml-nlp-steps">
+                        <span>Text</span>
+                        <span>Tokenization</span>
+                        <span>Embeddings</span>
+                        <span>Language Model</span>
+                        <span>Understanding</span>
+                        <span class="ml-flow-end">Action / Insight</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPUTER VISION -->
+    <section class="ml-section ml-section--light" id="vision">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Computer Vision</p>
+                <h2>Teach Systems to See</h2>
+                <p>Compact vision capabilities for classification, detection, and inspection — grounded in deep learning.</p>
+            </div>
+            <div class="ml-vision-layout">
+                <div class="ml-vision-flow" aria-hidden="true">
+                    <span>Image</span>
+                    <span>Vision Model</span>
+                    <span>Features</span>
+                    <span>Detection / Classification</span>
+                    <span class="ml-flow-end">Result</span>
+                </div>
+                <ul class="ml-vision-apps">
+                    <li>Image Classification</li>
+                    <li>Object Detection</li>
+                    <li>Segmentation</li>
+                    <li>Quality Inspection</li>
+                    <li>Document Vision</li>
+                    <li>Medical Imaging</li>
+                    <li>Visual Recognition</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI ECOSYSTEM -->
+    <section class="ml-section ml-section--dark" id="ecosystem">
+        <div class="container">
+            <div class="section-header ml-header--light">
+                <p class="section-subtitle">AI Solutions Ecosystem</p>
+                <h2>What Types of AI Systems We Build</h2>
+                <p>A unified view of prediction, language, vision, and detection capabilities.</p>
+            </div>
+            <div class="ml-ecosystem-grid">
+                <article class="ml-eco-card">
+                    <h3>Prediction</h3>
+                    <ul><li>Forecasting</li><li>Risk Prediction</li><li>Demand Prediction</li></ul>
+                </article>
+                <article class="ml-eco-card">
+                    <h3>Classification</h3>
+                    <ul><li>Customer Classification</li><li>Document Classification</li><li>Image Classification</li></ul>
+                </article>
+                <article class="ml-eco-card">
+                    <h3>Language</h3>
+                    <ul><li>NLP</li><li>Semantic Search</li><li>Text Understanding</li></ul>
+                </article>
+                <article class="ml-eco-card">
+                    <h3>Vision</h3>
+                    <ul><li>Object Detection</li><li>Image Analysis</li><li>Visual Inspection</li></ul>
+                </article>
+                <article class="ml-eco-card">
+                    <h3>Recommendation</h3>
+                    <ul><li>Product Recommendation</li><li>Content Recommendation</li><li>Personalization</li></ul>
+                </article>
+                <article class="ml-eco-card">
+                    <h3>Anomaly Detection</h3>
+                    <ul><li>Fraud Detection</li><li>System Monitoring</li><li>Quality Detection</li></ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="ml-section ml-section--light" id="process">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">How We Work</p>
+                <h2>Model Development Process</h2>
+                <p>A structured path from problem definition to monitored deployment.</p>
+            </div>
+            <ol class="ml-process-steps">
+                <li><span class="ml-process-num">01</span><h3>Understand</h3><p>Define the problem and success criteria.</p></li>
+                <li><span class="ml-process-num">02</span><h3>Collect</h3><p>Identify data sources and constraints.</p></li>
+                <li><span class="ml-process-num">03</span><h3>Prepare</h3><p>Clean, label, and engineer features.</p></li>
+                <li><span class="ml-process-num">04</span><h3>Train</h3><p>Build and iterate candidate models.</p></li>
+                <li><span class="ml-process-num">05</span><h3>Evaluate</h3><p>Validate against holdout metrics.</p></li>
+                <li><span class="ml-process-num">06</span><h3>Deploy</h3><p>Ship via API, cloud, or local infra.</p></li>
+                <li><span class="ml-process-num">07</span><h3>Monitor</h3><p>Track drift, quality, and outcomes.</p></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- EVALUATION -->
+    <section class="ml-section ml-section--dark" id="evaluation">
+        <div class="container">
+            <div class="section-header ml-header--light">
+                <p class="section-subtitle">Credibility</p>
+                <h2>Measure Before You Deploy</h2>
+                <p>Models should be evaluated against appropriate metrics and validation data — not assumptions.</p>
+            </div>
+            <div class="ml-eval-grid">
+                <article class="ml-eval-card">
+                    <h3>Classification</h3>
+                    <ul><li>Precision</li><li>Recall</li><li>F1 Score</li><li>ROC-AUC</li></ul>
+                </article>
+                <article class="ml-eval-card">
+                    <h3>Regression</h3>
+                    <ul><li>MAE</li><li>MSE</li><li>RMSE</li><li>RÂ²</li></ul>
+                </article>
+                <article class="ml-eval-card">
+                    <h3>NLP / Generation</h3>
+                    <ul><li>Task-specific metrics</li><li>Semantic similarity</li><li>Human evaluation</li></ul>
+                </article>
+                <article class="ml-eval-card">
+                    <h3>Computer Vision</h3>
+                    <ul><li>IoU</li><li>Precision</li><li>Recall</li><li>mAP</li></ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section class="apage-tech ml-tech" id="technology">
+        <div class="container">
+            <div class="section-header apage-tech-header">
+                <p class="section-subtitle">Stack</p>
+                <h2>Technology We Use</h2>
+                <p>Practical tools for model development, data work, and deployment — selected for each project.</p>
+            </div>
+            <div class="apage-tech-grid">
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--llm">
+                        <span class="apage-stack-tag">Languages</span>
+                        <div class="apage-stack-mark" aria-hidden="true"><i class="bi bi-braces"></i></div>
+                        <h3 class="apage-stack-name">Python &amp; JS</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head"><h4>Core Languages</h4><span class="apage-stack-status">In stack</span></div>
+                        <p>Python for modeling; JavaScript / TypeScript where product interfaces need them.</p>
+                    </div>
+                </article>
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--agents">
+                        <span class="apage-stack-tag">ML / DL</span>
+                        <div class="apage-stack-mark" aria-hidden="true"><i class="bi bi-cpu"></i></div>
+                        <h3 class="apage-stack-name">Frameworks</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head"><h4>PyTorch Â· TensorFlow Â· Scikit-learn</h4><span class="apage-stack-status">In stack</span></div>
+                        <p>Modern frameworks for classical ML and deep neural networks.</p>
+                    </div>
+                </article>
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--rag">
+                        <span class="apage-stack-tag">NLP</span>
+                        <div class="apage-stack-mark" aria-hidden="true"><i class="bi bi-fonts"></i></div>
+                        <h3 class="apage-stack-name">Language Stack</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head"><h4>Transformers &amp; Embeddings</h4><span class="apage-stack-status">In stack</span></div>
+                        <p>NLP pipelines for understanding, search, and text intelligence.</p>
+                    </div>
+                </article>
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--vector">
+                        <span class="apage-stack-tag">Data</span>
+                        <div class="apage-stack-mark" aria-hidden="true"><i class="bi bi-database"></i></div>
+                        <h3 class="apage-stack-name">Data Layer</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head"><h4>NumPy Â· Pandas Â· SQL</h4><span class="apage-stack-status">In stack</span></div>
+                        <p>Preparation and storage with PostgreSQL / MongoDB as needed.</p>
+                    </div>
+                </article>
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--api">
+                        <span class="apage-stack-tag">Deploy</span>
+                        <div class="apage-stack-mark" aria-hidden="true"><i class="bi bi-cloud-upload"></i></div>
+                        <h3 class="apage-stack-name">Delivery</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head"><h4>FastAPI Â· Docker Â· APIs</h4><span class="apage-stack-status">In stack</span></div>
+                        <p>REST APIs, containers, and cloud or local deployment options.</p>
+                    </div>
+                </article>
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--flow">
+                        <span class="apage-stack-tag">Integrate</span>
+                        <div class="apage-stack-mark" aria-hidden="true"><i class="bi bi-plugin"></i></div>
+                        <h3 class="apage-stack-name">Systems</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head"><h4>Product &amp; Workflow Fit</h4><span class="apage-stack-status">In stack</span></div>
+                        <p>Models connect into software, dashboards, and automation flows.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- APPLICATIONS -->
+    <section class="ml-section ml-section--dark" id="applications">
+        <div class="container">
+            <div class="section-header ml-header--light">
+                <p class="section-subtitle">Industries</p>
+                <h2>Real-World Applications</h2>
+                <p>Where intelligent models create practical business value.</p>
+            </div>
+            <div class="ml-app-grid">
+                <article class="ml-app-card"><h3>Healthcare</h3><p>Medical image analysis, predictive models, and clinical data intelligence.</p></article>
+                <article class="ml-app-card"><h3>Finance</h3><p>Risk modeling, anomaly detection, and forecasting support.</p></article>
+                <article class="ml-app-card"><h3>Retail</h3><p>Recommendations, demand forecasting, and customer analytics.</p></article>
+                <article class="ml-app-card"><h3>Manufacturing</h3><p>Quality inspection, predictive maintenance, and anomaly detection.</p></article>
+                <article class="ml-app-card"><h3>Education</h3><p>Personalized learning signals, student analytics, and NLP-assisted systems.</p></article>
+                <article class="ml-app-card"><h3>Enterprise</h3><p>Document intelligence, classification, prediction, and decision support.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ML + AUTOMATION -->
+    <section class="ml-section ml-section--light" id="with-automation">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Connected Offerings</p>
+                <h2>AI Models and AI Automation Work Together</h2>
+                <p>Models create intelligence. Automation puts that intelligence to work in real business processes.</p>
+            </div>
+            <ol class="ml-bridge" aria-label="How ML and automation connect">
+                <li><strong>ML / DL / NLP</strong><span>Build intelligence</span></li>
+                <li><strong>Models</strong><span>Understand / predict</span></li>
+                <li><strong>AI &amp; Business Automation</strong><span>Embed in workflows</span></li>
+                <li><strong>Business Action</strong><span>Results that move work forward</span></li>
+            </ol>
+            <div class="ml-bridge-cta">
+                <a href="automation.html" class="btn btn-secondary">Explore AI Automation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="webdev-faq ml-faq">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Got Questions?</p>
+                <h2>Frequently Asked Questions</h2>
+                <p>Clear answers about machine learning, deep learning, and NLP with HAIZON.</p>
+            </div>
+            <div class="faq-accordion" id="faqAccordion">
+                <div class="faq-accordion-item active">
+                    <button class="faq-accordion-trigger" aria-expanded="true">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">What is the difference between machine learning and deep learning?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Machine learning covers algorithms that learn patterns from data. Deep learning is a subset that uses multi-layer neural networks — especially useful for images, language, and other complex data.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">When should a business use machine learning?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>When you have meaningful historical data and a clear decision to improve — forecasting, classification, risk scoring, or anomaly detection — and rules alone are not enough.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">What can NLP be used for?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Classifying tickets, extracting entities from documents, sentiment analysis, summarization, semantic search, and language understanding inside products or workflows.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">Can you train a custom model using our data?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Yes. We assess data quality and problem fit, then prepare, train, and evaluate models tailored to your domain — with clear success criteria agreed up front.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">Can you integrate an ML model into our existing software?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Yes. Models can be exposed through APIs and connected to your applications, dashboards, CRMs, or internal tools.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">Can you deploy models through an API?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Yes. FastAPI and REST endpoints are a common delivery path so other systems can call the model securely and reliably.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">Can you work with images and video?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Yes. Computer vision covers classification, detection, segmentation, and inspection use cases. Video projects are scoped carefully based on volume and latency needs.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">Can AI models run on local infrastructure?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Yes. Depending on model size and latency needs, we can deploy to cloud, on-prem, or hybrid environments — including local servers when required.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">How do you evaluate model performance?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>We choose metrics that match the task — precision/recall/F1 for classification, error metrics for regression, task-specific and human review for NLP, and IoU/mAP for vision — then validate on held-out data.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">Can ML/DL/NLP be combined with AI automation?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Yes. Models provide prediction and understanding; automation connects them to workflows, systems, and human approval steps so intelligence becomes action.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="ml-final-cta">
+        <div class="container">
+            <div class="automation-cta">
+                <h3 class="automation-cta-title">Have a Problem That Needs Intelligence?</h3>
+                <p class="automation-cta-text">Tell us what you want to predict, understand, classify, recognize, or automate. We'll help determine the right AI approach.</p>
+                <div class="automation-cta-actions">
+                    <a href="#contact" class="btn btn-primary">Discuss Your AI Project</a>
+                    <a href="automation.html" class="btn btn-secondary automation-btn-secondary">Explore AI Automation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+        <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-intro">
+                    <p class="section-subtitle">Get In Touch</p>
+                    <h2>Let's Build Something That Matters.</h2>
+                    <p class="contact-lead">Have a business challenge, software idea, or AI project in mind? Tell us what you're trying to achieve and we'll help shape the right solution.</p>
+                    <ul class="contact-cards">
+                        <li class="contact-card">
+                            <div class="contact-card-icon" aria-hidden="true"><i class="bi bi-envelope"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Email</span>
+                                <a class="contact-card-value" href="mailto:info@haizon.com">info@haizon.com</a>
+                            </div>
+                        </li>
+                        <li class="contact-card">
+                            <div class="contact-card-icon" aria-hidden="true"><i class="bi bi-telephone"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Phone</span>
+                                <a class="contact-card-value" href="tel:+15551234567">+1 (555) 123-4567</a>
+                            </div>
+                        </li>
+                        <li class="contact-card">
+                            <div class="contact-card-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Location</span>
+                                <span class="contact-card-value">123 Innovation Street, Tech City, TC 12345</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="contact-social social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    </div>
+                </div>
+                <div class="contact-panel">
+                    <span class="contact-panel-eyebrow">Start a Conversation</span>
+                    <h3>Tell us about your project</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="contact-form-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Work Email</label>
+                                <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@company.com">
+                            </div>
+                            <div class="form-group form-group--full">
+                                <label for="company">Company / Organization</label>
+                                <input type="text" id="company" name="company" autocomplete="organization" placeholder="Company name">
+                            </div>
+                            <div class="form-group">
+                                <label for="projectType">Project Type</label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="" disabled>Select a service</option>
+                                    <option value="automation">AI &amp; Business Automation</option>
+                                    <option value="ml" selected>Machine Learning / AI</option>
+                                    <option value="web">Custom Web Development</option>
+                                    <option value="software">Software Solutions</option>
+                                    <option value="data">Data Science &amp; Analytics</option>
+                                    <option value="uiux">UI/UX &amp; Digital Products</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Budget / Project Scope</label>
+                                <select id="budget" name="budget">
+                                    <option value="" disabled selected>Select a range</option>
+                                    <option value="unsure">Not sure yet</option>
+                                    <option value="small">Small project</option>
+                                    <option value="medium">Medium project</option>
+                                    <option value="large">Large / Enterprise</option>
+                                    <option value="discuss">Let's discuss</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-group--full">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required placeholder="Tell us about your project, challenge, or idea..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="form-submit">Discuss Your Project <span aria-hidden="true">→</span></button>
+                    </form>
+                    <p class="contact-trust">Tell us what you're building. We'll take it from there.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-stable">
+        <div class="footer-accent" aria-hidden="true"></div>
+        <div class="footer-content">
+            <div class="footer-section footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="HAIZON INNOVATIONS" class="footer-logo-img" width="180" height="48" decoding="async">
+                </div>
+                <p class="footer-pillars">AI • Software • Data</p>
+                <p>Building intelligent digital solutions for modern businesses.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Services</h3>
+                <ul class="footer-links">
+                    <li><a href="automation.html"><span>AI &amp; Business Automation</span></a></li>
+                    <li><a href="machine-learning.html"><span>Machine Learning, Deep Learning &amp; NLP</span></a></li>
+                    <li><a href="custom-web-development.html"><span>Custom Web Development</span></a></li>
+                    <li><a href="software-solutions.html"><span>Software Solutions</span></a></li>
+                    <li><a href="data-science.html"><span>Data Science &amp; Analytics</span></a></li>
+                    <li><a href="ui-ux.html"><span>UI/UX &amp; Digital Products</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#about"><span>About</span></a></li>
+                    <li><a href="index.html#why-us"><span>Why HAIZON</span></a></li>
+                    <li><a href="index.html#portfolio"><span>Portfolio</span></a></li>
+                    <li><a href="#contact"><span>Contact</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-connect">
+                <h3 class="footer-title">Connect</h3>
+                <ul class="contact-info">
+                    <li>
+                        <span class="connect-label">Email</span>
+                        <a href="mailto:info@haizon.com">info@haizon.com</a>
+                    </li>
+                    <li>
+                        <span class="connect-label">Phone</span>
+                        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                    </li>
+                    <li>
+                        <span class="connect-label">Location</span>
+                        <span>123 Innovation Street, Tech City, TC 12345</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2026 <span class="brand-highlight">HAIZON INNOVATIONS</span>. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="#">Terms of Service</a>
+                    <span class="separator">•</span>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">â†‘</button>
+    <a href="https://wa.me/+923415482209?text=Hello%20HAIZON%20INNOVATIONS,%20I%20would%20like%20to%20know%20more%20about%20your%20services"
+        target="_blank" rel="noopener noreferrer" class="whatsapp-button" aria-label="Contact us on WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.982-3.648-.239-.375a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <span class="whatsapp-pulse"></span>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <script src="index.js"></script>
+    <script src="machine-learning.js"></script>
+</body>
+
+</html>

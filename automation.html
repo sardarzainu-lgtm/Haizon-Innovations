@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="HAIZON INNOVATIONS - AI & Business Automation. Connect systems, ground AI in your knowledge, and automate repetitive work with RAG, agents, and workflows.">
+    <meta name="keywords"
+        content="AI automation, business automation, RAG, AI agents, chatbots, workflow automation, HAIZON INNOVATIONS">
+    <title>AI &amp; Business Automation | HAIZON INNOVATIONS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="page-automation">
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="HAIZON INNOVATIONS" class="logo-img logo" width="224" height="56" decoding="async">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li class="nav-dropdown">
+                    <a href="index.html#services">Services <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="automation.html">AI &amp; Business Automation</a></li>
+                        <li><a href="machine-learning.html">Machine Learning, Deep Learning &amp; NLP</a></li>
+                        <li><a href="custom-web-development.html">Custom Web Development</a></li>
+                        <li><a href="software-solutions.html">Software Solutions</a></li>
+                        <li><a href="data-science.html">Data Science &amp; Analytics</a></li>
+                        <li><a href="ui-ux.html">UI/UX &amp; Digital Products</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Get Started</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO — video-ready architecture, static SVG now -->
+    <section class="webdev-hero webdev-hero-stable apage-hero" id="home">
+        <div class="webdev-hero-background apage-hero-background" id="heroBackground">
+            <div class="apage-hero-static" aria-hidden="true">
+                <svg class="apage-hero-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <defs>
+                        <radialGradient id="apageHeroGlow" cx="50%" cy="48%" r="35%">
+                            <stop offset="0%" stop-color="#D4A84B" stop-opacity="0.22"/>
+                            <stop offset="55%" stop-color="#5D6D7E" stop-opacity="0.08"/>
+                            <stop offset="100%" stop-color="#0a0a0c" stop-opacity="0"/>
+                        </radialGradient>
+                    </defs>
+                    <rect width="1440" height="900" fill="#0a0a0c"/>
+                    <ellipse cx="720" cy="430" rx="420" ry="280" fill="url(#apageHeroGlow)"/>
+                    <g class="apage-hero-net" stroke="#D4A84B" stroke-opacity="0.18" fill="none" stroke-width="1">
+                        <path id="apageP1" d="M280,220 C420,260 520,360 720,430"/>
+                        <path id="apageP2" d="M220,480 C400,460 520,440 720,430"/>
+                        <path id="apageP3" d="M1160,240 C1000,280 860,360 720,430"/>
+                        <path id="apageP4" d="M1220,520 C1040,480 880,450 720,430"/>
+                        <path id="apageP5" d="M720,430 C720,520 700,620 720,720"/>
+                    </g>
+                    <g fill="#D4A84B" fill-opacity="0.55">
+                        <circle cx="280" cy="220" r="4"/><circle cx="220" cy="480" r="3.5"/>
+                        <circle cx="1160" cy="240" r="4"/><circle cx="1220" cy="520" r="3.5"/>
+                        <circle cx="720" cy="720" r="4"/>
+                    </g>
+                    <circle class="apage-hero-particle" r="2.5" fill="#D4A84B"><animateMotion dur="7s" repeatCount="indefinite"><mpath href="#apageP1"/></animateMotion></circle>
+                    <circle class="apage-hero-particle" r="2" fill="#E4C06B"><animateMotion dur="8.5s" repeatCount="indefinite" begin="1.5s"><mpath href="#apageP3"/></animateMotion></circle>
+                    <circle class="apage-hero-particle" r="2.2" fill="#D4A84B"><animateMotion dur="9s" repeatCount="indefinite" begin="0.8s"><mpath href="#apageP2"/></animateMotion></circle>
+                    <circle class="apage-hero-particle" r="2" fill="#7B8B9A"><animateMotion dur="10s" repeatCount="indefinite" begin="2s"><mpath href="#apageP4"/></animateMotion></circle>
+                    <g transform="translate(720,430)">
+                        <circle r="54" fill="rgba(93,109,126,0.25)" stroke="rgba(212,168,75,0.35)" stroke-width="1.5"/>
+                        <circle r="36" fill="rgba(10,10,12,0.85)" stroke="rgba(212,168,75,0.5)" stroke-width="1"/>
+                        <text text-anchor="middle" y="6" fill="#fff" font-family="Outfit,sans-serif" font-size="18" font-weight="700">AI</text>
+                    </g>
+                </svg>
+            </div>
+            <!-- Optional future video layer (inactive) -->
+            <video id="heroVideo" class="webdev-hero-video apage-hero-video" muted loop playsinline preload="none" aria-hidden="true" disablePictureInPicture hidden></video>
+            <div class="webdev-hero-video-overlay apage-hero-overlay"></div>
+        </div>
+        <div class="webdev-hero-container">
+            <div class="webdev-hero-content-wrapper">
+                <div class="webdev-hero-badge">
+                    <svg class="badge-icon" width="8" height="8" viewBox="0 0 8 8" fill="currentColor"><circle cx="4" cy="4" r="4"/></svg>
+                    <span>AI &amp; BUSINESS AUTOMATION</span>
+                </div>
+                <h1 class="webdev-hero-title">
+                    <span class="webdev-title-line-1">Automate Work.</span>
+                    <span class="webdev-title-line-2">Amplify Intelligence.</span>
+                </h1>
+                <p class="webdev-hero-description">
+                    Connect your business systems, give AI access to your knowledge, and turn repetitive processes into intelligent workflows.
+                </p>
+                <div class="webdev-hero-cta apage-hero-cta">
+                    <a href="#contact" class="btn btn-primary">Start Your Automation</a>
+                    <a href="#ecosystem" class="btn btn-secondary">Explore Capabilities</a>
+                </div>
+            </div>
+        </div>
+        <div class="webdev-hero-bottom-overlay"></div>
+    </section>
+
+    <!-- WHY BUSINESS AUTOMATION -->
+    <section class="apage-why" id="why">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">The Opportunity</p>
+                <h2>Your Business Has Work That Shouldn't Be Manual</h2>
+                <p>Repetitive processes drain time. Intelligent automation returns it to your team.</p>
+            </div>
+            <ul class="apage-pain-grid">
+                <li><i class="bi bi-keyboard" aria-hidden="true"></i> Repetitive data entry</li>
+                <li><i class="bi bi-chat-left-text" aria-hidden="true"></i> Answering the same questions</li>
+                <li><i class="bi bi-arrow-left-right" aria-hidden="true"></i> Moving data between systems</li>
+                <li><i class="bi bi-file-earmark" aria-hidden="true"></i> Processing documents by hand</li>
+                <li><i class="bi bi-funnel" aria-hidden="true"></i> Qualifying leads manually</li>
+                <li><i class="bi bi-bar-chart" aria-hidden="true"></i> Building the same reports</li>
+                <li><i class="bi bi-search" aria-hidden="true"></i> Searching internal information</li>
+                <li><i class="bi bi-person-lines-fill" aria-hidden="true"></i> Updating CRM records</li>
+            </ul>
+            <div class="automation-compare apage-why-compare">
+                <div class="automation-compare-grid">
+                    <div class="automation-compare-col automation-compare-col--before">
+                        <p class="automation-compare-label">Manual</p>
+                        <ol class="automation-compare-flow">
+                            <li>Customer</li><li>Employee</li><li>Search</li><li>Copy</li><li>Update</li><li>Reply</li><li>Report</li>
+                        </ol>
+                    </div>
+                    <div class="automation-compare-col automation-compare-col--after">
+                        <p class="automation-compare-label">HAIZON Automation</p>
+                        <ol class="automation-compare-flow">
+                            <li>Customer</li><li>AI</li><li>Knowledge</li><li>Decision</li><li>Action</li><li>Result</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI AUTOMATION ECOSYSTEM -->
+    <section class="automation-section apage-ecosystem" id="ecosystem" aria-labelledby="ecosystem-heading">
+        <div class="automation-container">
+            <header class="automation-header">
+                <p class="automation-eyebrow">The System</p>
+                <h2 id="ecosystem-heading" class="automation-title">AI Automation Ecosystem</h2>
+                <p class="automation-lead">Business systems connect to an AI core. RAG, agents, and workflows turn signals into automated actions.</p>
+            </header>
+            <div class="automation-visual" data-mode="overview">
+                <div class="automation-visual--desktop">
+                    <div class="automation-ecosystem" data-flow="overview">
+                        <div class="automation-inputs">
+                            <p class="automation-layer-label">Business Systems</p>
+                            <div class="automation-node"><span class="automation-node-dot"></span><i class="bi bi-globe2" aria-hidden="true"></i><div><strong>Website</strong><span>Traffic &amp; forms</span></div></div>
+                            <div class="automation-node"><span class="automation-node-dot"></span><i class="bi bi-people" aria-hidden="true"></i><div><strong>CRM</strong><span>Customer data</span></div></div>
+                            <div class="automation-node"><span class="automation-node-dot"></span><i class="bi bi-file-earmark-text" aria-hidden="true"></i><div><strong>Documents</strong><span>Knowledge files</span></div></div>
+                            <div class="automation-node"><span class="automation-node-dot"></span><i class="bi bi-whatsapp" aria-hidden="true"></i><div><strong>WhatsApp</strong><span>Conversations</span></div></div>
+                            <div class="automation-node"><span class="automation-node-dot"></span><i class="bi bi-database" aria-hidden="true"></i><div><strong>Database</strong><span>Business records</span></div></div>
+                            <div class="automation-node"><span class="automation-node-dot"></span><i class="bi bi-braces" aria-hidden="true"></i><div><strong>APIs</strong><span>Connected systems</span></div></div>
+                        </div>
+                        <div class="automation-core-wrap">
+                            <svg class="automation-flow-svg" viewBox="0 0 280 420" aria-hidden="true" focusable="false">
+                                <path class="automation-path" id="apageEco1" d="M0,40 C90,40 120,180 280,210" fill="none"/>
+                                <path class="automation-path" id="apageEco2" d="M0,100 C90,100 120,190 280,210" fill="none"/>
+                                <path class="automation-path" id="apageEco3" d="M0,160 C90,160 140,200 280,210" fill="none"/>
+                                <path class="automation-path" id="apageEco4" d="M0,220 C90,220 140,220 280,210" fill="none"/>
+                                <path class="automation-path" id="apageEco5" d="M0,280 C90,280 140,240 280,210" fill="none"/>
+                                <path class="automation-path" id="apageEco6" d="M0,340 C90,340 120,250 280,210" fill="none"/>
+                                <circle class="automation-particle" r="3"><animateMotion dur="4.5s" repeatCount="indefinite"><mpath href="#apageEco1"/></animateMotion></circle>
+                                <circle class="automation-particle" r="2.5"><animateMotion dur="5s" repeatCount="indefinite" begin="1s"><mpath href="#apageEco3"/></animateMotion></circle>
+                                <circle class="automation-particle" r="3"><animateMotion dur="5.5s" repeatCount="indefinite" begin="2s"><mpath href="#apageEco5"/></animateMotion></circle>
+                            </svg>
+                            <div class="automation-core">
+                                <div class="automation-core-glow"></div>
+                                <div class="automation-core-ring automation-core-ring--1"></div>
+                                <div class="automation-core-ring automation-core-ring--2"></div>
+                                <span class="automation-orbit-dot automation-orbit-dot--1"></span>
+                                <span class="automation-orbit-dot automation-orbit-dot--2"></span>
+                                <span class="automation-orbit-dot automation-orbit-dot--3"></span>
+                                <div class="automation-core-center">
+                                    <span class="automation-core-ai">AI</span>
+                                    <span class="automation-core-label">AUTOMATION ENGINE</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="automation-intelligence">
+                            <p class="automation-layer-label">Intelligence</p>
+                            <div class="automation-intel-node"><i class="bi bi-journal-richtext" aria-hidden="true"></i><h3>RAG</h3><p class="automation-intel-title">Business Knowledge</p><p class="automation-intel-desc">AI grounded in your documents and data.</p></div>
+                            <div class="automation-intel-node"><i class="bi bi-cpu" aria-hidden="true"></i><h3>AI Agents</h3><p class="automation-intel-title">Intelligent Actions</p><p class="automation-intel-desc">Reason, use tools, and complete tasks.</p></div>
+                            <div class="automation-intel-node"><i class="bi bi-diagram-3" aria-hidden="true"></i><h3>Workflow Engine</h3><p class="automation-intel-title">Connected Processes</p><p class="automation-intel-desc">Automate work across your systems.</p></div>
+                        </div>
+                        <div class="automation-outputs">
+                            <p class="automation-layer-label">Automated Actions</p>
+                            <div class="automation-output-pills">
+                                <span>Email</span><span>CRM updates</span><span>Reports</span><span>Notifications</span><span>Customer responses</span><span>API actions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="automation-visual--tablet apage-eco-tablet">
+                    <div class="automation-tablet-stack">
+                        <div class="automation-core automation-core--compact">
+                            <div class="automation-core-glow"></div>
+                            <div class="automation-core-ring automation-core-ring--1"></div>
+                            <div class="automation-core-center"><span class="automation-core-ai">AI</span><span class="automation-core-label">CORE</span></div>
+                        </div>
+                        <span class="automation-flow-arrow automation-flow-arrow--down" aria-hidden="true"></span>
+                        <div class="automation-tablet-intel">
+                            <div class="automation-intel-node"><i class="bi bi-journal-richtext" aria-hidden="true"></i><h3>RAG</h3><p>Knowledge</p></div>
+                            <div class="automation-intel-node"><i class="bi bi-cpu" aria-hidden="true"></i><h3>Agents</h3><p>Actions</p></div>
+                            <div class="automation-intel-node"><i class="bi bi-diagram-3" aria-hidden="true"></i><h3>Workflow</h3><p>Processes</p></div>
+                        </div>
+                        <span class="automation-flow-arrow automation-flow-arrow--down" aria-hidden="true"></span>
+                        <div class="automation-output-pills"><span>Email</span><span>CRM</span><span>Reports</span><span>APIs</span></div>
+                    </div>
+                </div>
+                <div class="automation-visual--mobile apage-eco-mobile">
+                    <div class="automation-mobile-story">
+                        <div class="automation-core automation-core--compact">
+                            <div class="automation-core-glow"></div>
+                            <div class="automation-core-center"><span class="automation-core-ai">AI</span><span class="automation-core-label">CORE</span></div>
+                        </div>
+                        <span class="automation-flow-arrow automation-flow-arrow--down" aria-hidden="true"></span>
+                        <div class="automation-mobile-step"><i class="bi bi-journal-richtext" aria-hidden="true"></i> RAG</div>
+                        <span class="automation-flow-arrow automation-flow-arrow--down" aria-hidden="true"></span>
+                        <div class="automation-mobile-step"><i class="bi bi-cpu" aria-hidden="true"></i> Agents</div>
+                        <span class="automation-flow-arrow automation-flow-arrow--down" aria-hidden="true"></span>
+                        <div class="automation-mobile-step"><i class="bi bi-diagram-3" aria-hidden="true"></i> Workflow</div>
+                        <span class="automation-flow-arrow automation-flow-arrow--down" aria-hidden="true"></span>
+                        <div class="automation-mobile-step automation-mobile-step--accent">Automated Results</div>
+                        <div class="automation-input-pills"><span>Website</span><span>CRM</span><span>Documents</span><span>WhatsApp</span><span>APIs</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI CHATBOTS -->
+    <section class="apage-capability apage-capability--light" id="chatbots">
+        <div class="container">
+            <div class="apage-capability-grid">
+                <div class="apage-capability-copy">
+                    <p class="section-subtitle">Conversations</p>
+                    <h2>AI Chatbots</h2>
+                    <p class="apage-capability-lead">Turn customer conversations into intelligent interactions.</p>
+                    <ul class="apage-check-list">
+                        <li>Website chatbots</li>
+                        <li>Customer support assistants</li>
+                        <li>Sales &amp; lead qualification</li>
+                        <li>Appointment assistants</li>
+                        <li>Internal knowledge assistants</li>
+                        <li>WhatsApp assistants</li>
+                        <li>Human handoff when needed</li>
+                    </ul>
+                </div>
+                <div class="apage-chat-visual" aria-hidden="true">
+                    <div class="apage-chat-window">
+                        <div class="apage-chat-bubble apage-chat-bubble--user">Can you help with my order status?</div>
+                        <div class="apage-chat-bubble apage-chat-bubble--ai">I found your order #4821. It shipped yesterday and arrives Thursday.</div>
+                        <div class="apage-chat-bubble apage-chat-bubble--user">Update my delivery address?</div>
+                        <div class="apage-chat-bubble apage-chat-bubble--ai">Done — address updated in CRM and confirmation emailed.</div>
+                        <div class="apage-chat-meta">Customer → AI → RAG → Response → Action</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RAG -->
+    <section class="apage-capability apage-capability--dark" id="rag">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Knowledge</p>
+                <h2>Give AI Access to Your Business Knowledge</h2>
+                <p>RAG grounds answers in your documents, FAQs, and business data — so responses stay relevant to your organization.</p>
+            </div>
+            <div class="apage-pipeline" aria-label="RAG pipeline">
+                <div class="apage-pipeline-sources">
+                    <span>PDF</span><span>Docs</span><span>Website</span><span>FAQ</span><span>Database</span>
+                </div>
+                <span class="automation-flow-arrow automation-flow-arrow--down" aria-hidden="true"></span>
+                <div class="apage-pipeline-steps">
+                    <div class="apage-pipe-step">Ingestion</div>
+                    <div class="apage-pipe-step">Embeddings</div>
+                    <div class="apage-pipe-step">Vector Search</div>
+                    <div class="apage-pipe-step">Relevant Context</div>
+                    <div class="apage-pipe-step apage-pipe-step--core">LLM</div>
+                    <div class="apage-pipe-step apage-pipe-step--accent">Grounded Answer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI AGENTS -->
+    <section class="apage-capability apage-capability--light" id="agents">
+        <div class="container">
+            <div class="apage-capability-grid apage-capability-grid--reverse">
+                <div class="apage-capability-copy">
+                    <p class="section-subtitle">Agents</p>
+                    <h2>AI That Can Do More Than Answer</h2>
+                    <p class="apage-capability-lead">Agents plan multi-step work, use tools, and execute tasks across your systems.</p>
+                    <ul class="apage-check-list">
+                        <li>Tool usage &amp; API calls</li>
+                        <li>Multi-step reasoning</li>
+                        <li>Database interaction</li>
+                        <li>Search &amp; retrieval</li>
+                        <li>Decision-making</li>
+                        <li>Task execution with oversight</li>
+                    </ul>
+                </div>
+                <div class="apage-agent-loop" aria-hidden="true">
+                    <div class="apage-flow-vertical">
+                        <div class="automation-flow-step automation-flow-step--core">Goal</div>
+                        <span class="automation-flow-arrow automation-flow-arrow--down"></span>
+                        <div class="automation-flow-step">Understand</div>
+                        <span class="automation-flow-arrow automation-flow-arrow--down"></span>
+                        <div class="automation-flow-step">Plan</div>
+                        <span class="automation-flow-arrow automation-flow-arrow--down"></span>
+                        <div class="automation-flow-step">Use Tools</div>
+                        <span class="automation-flow-arrow automation-flow-arrow--down"></span>
+                        <div class="automation-flow-step">Observe</div>
+                        <span class="automation-flow-arrow automation-flow-arrow--down"></span>
+                        <div class="automation-flow-step">Decide</div>
+                        <span class="automation-flow-arrow automation-flow-arrow--down"></span>
+                        <div class="automation-flow-step automation-flow-step--accent">Act</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKFLOW AUTOMATION -->
+    <section class="apage-capability apage-capability--dark" id="workflows">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Orchestration</p>
+                <h2>Connect Your Processes</h2>
+                <p>Triggers, AI processing, conditions, and integrations — wired into repeatable workflows.</p>
+            </div>
+            <div class="apage-flow-horizontal apage-flow-scroll" aria-label="Workflow steps">
+                <div class="automation-flow-step">Trigger</div>
+                <span class="automation-flow-arrow" aria-hidden="true"></span>
+                <div class="automation-flow-step automation-flow-step--core">AI Processing</div>
+                <span class="automation-flow-arrow" aria-hidden="true"></span>
+                <div class="automation-flow-step">Condition</div>
+                <span class="automation-flow-arrow" aria-hidden="true"></span>
+                <div class="automation-flow-step">Action</div>
+                <span class="automation-flow-arrow" aria-hidden="true"></span>
+                <div class="automation-flow-step">Integration</div>
+                <span class="automation-flow-arrow" aria-hidden="true"></span>
+                <div class="automation-flow-step automation-flow-step--accent">Result</div>
+            </div>
+            <div class="apage-example-grid">
+                <article class="apage-example-card">
+                    <h3>Lead Capture</h3>
+                    <ol class="automation-compare-flow">
+                        <li>Website Lead</li><li>AI Qualification</li><li>CRM</li><li>Sales Notification</li><li>Follow-up</li>
+                    </ol>
+                </article>
+                <article class="apage-example-card">
+                    <h3>Invoice Intake</h3>
+                    <ol class="automation-compare-flow">
+                        <li>Invoice</li><li>Document AI</li><li>Extract Data</li><li>Validate</li><li>Database</li><li>Accounting Workflow</li>
+                    </ol>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCUMENT INTELLIGENCE -->
+    <section class="apage-capability apage-capability--light" id="documents">
+        <div class="container">
+            <div class="apage-capability-grid">
+                <div class="apage-capability-copy">
+                    <p class="section-subtitle">Documents</p>
+                    <h2>Document Intelligence</h2>
+                    <p class="apage-capability-lead">Extract structured data from everyday business files and route it into your systems.</p>
+                    <ul class="apage-check-list">
+                        <li>Invoices &amp; receipts</li>
+                        <li>Contracts &amp; forms</li>
+                        <li>Reports &amp; resumes</li>
+                        <li>PDFs and scanned files</li>
+                    </ul>
+                </div>
+                <div class="apage-flow-vertical" aria-hidden="true">
+                    <div class="automation-flow-step">Document</div>
+                    <span class="automation-flow-arrow automation-flow-arrow--down"></span>
+                    <div class="automation-flow-step automation-flow-step--core">OCR / AI</div>
+                    <span class="automation-flow-arrow automation-flow-arrow--down"></span>
+                    <div class="automation-flow-step">Extraction</div>
+                    <span class="automation-flow-arrow automation-flow-arrow--down"></span>
+                    <div class="automation-flow-step">Validation</div>
+                    <span class="automation-flow-arrow automation-flow-arrow--down"></span>
+                    <div class="automation-flow-step">Structured Data</div>
+                    <span class="automation-flow-arrow automation-flow-arrow--down"></span>
+                    <div class="automation-flow-step automation-flow-step--accent">Business Action</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SALES & CUSTOMER AUTOMATION -->
+    <section class="apage-capability apage-capability--dark" id="sales">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Growth</p>
+                <h2>Sales &amp; Customer Automation</h2>
+                <p>Qualify, respond, and escalate — without losing the human touch when it matters.</p>
+            </div>
+            <div class="apage-example-grid">
+                <article class="apage-example-card">
+                    <h3>Sales Path</h3>
+                    <ol class="automation-compare-flow">
+                        <li>Visitor</li><li>AI Conversation</li><li>Qualification</li><li>Lead Score</li><li>CRM</li><li>Follow-up</li><li>Meeting</li>
+                    </ol>
+                </article>
+                <article class="apage-example-card">
+                    <h3>Support Path</h3>
+                    <ol class="automation-compare-flow">
+                        <li>Customer Question</li><li>AI</li><li>RAG</li><li>Answer</li><li>Resolved? → Close or Human</li>
+                    </ol>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTEGRATIONS -->
+    <section class="apage-capability apage-capability--light" id="integrations">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Connectivity</p>
+                <h2>Your Systems + HAIZON AI</h2>
+                <p>We connect automation to the tools you already use through APIs, webhooks, and custom integrations.</p>
+            </div>
+            <div class="apage-integrations">
+                <div class="apage-integ-hub">
+                    <span class="apage-integ-core">HAIZON AI</span>
+                </div>
+                <div class="apage-integ-nodes">
+                    <span>CRM</span><span>Email</span><span>Messaging</span><span>Databases</span>
+                    <span>APIs</span><span>Cloud Storage</span><span>Business Software</span><span>Webhooks</span>
+                </div>
+                <p class="apage-integ-formula">YOUR SYSTEMS + HAIZON AI = AUTOMATED WORKFLOW</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- REAL BUSINESS WORKFLOWS -->
+    <section class="apage-capability apage-capability--dark" id="examples">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">In Practice</p>
+                <h2>Real Business Workflows</h2>
+                <p>Practical automation patterns we design and implement for teams.</p>
+            </div>
+            <div class="apage-example-grid apage-example-grid--4">
+                <article class="apage-example-card">
+                    <h3>Lead Automation</h3>
+                    <ol class="automation-compare-flow"><li>Website</li><li>AI</li><li>Qualification</li><li>CRM</li><li>Sales Team</li></ol>
+                </article>
+                <article class="apage-example-card">
+                    <h3>Knowledge Assistant</h3>
+                    <ol class="automation-compare-flow"><li>Company Documents</li><li>RAG</li><li>Employee Question</li><li>Grounded Answer</li></ol>
+                </article>
+                <article class="apage-example-card">
+                    <h3>Customer Support</h3>
+                    <ol class="automation-compare-flow"><li>Customer</li><li>AI Assistant</li><li>Knowledge Base</li><li>Answer / Handoff</li></ol>
+                </article>
+                <article class="apage-example-card">
+                    <h3>Document Processing</h3>
+                    <ol class="automation-compare-flow"><li>PDF</li><li>AI Extraction</li><li>Validation</li><li>Database</li></ol>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW HAIZON BUILDS -->
+    <section class="apage-process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Delivery</p>
+                <h2>How HAIZON Builds Automation</h2>
+                <p>A structured path from discovery to continuous improvement.</p>
+            </div>
+            <ol class="apage-process-steps">
+                <li><span class="apage-step-num">01</span><h3>Discover</h3><p>Map the work slowing your team down.</p></li>
+                <li><span class="apage-step-num">02</span><h3>Map</h3><p>Document systems, data, and decision points.</p></li>
+                <li><span class="apage-step-num">03</span><h3>Design</h3><p>Define AI roles, workflows, and handoffs.</p></li>
+                <li><span class="apage-step-num">04</span><h3>Integrate</h3><p>Connect CRMs, APIs, and knowledge sources.</p></li>
+                <li><span class="apage-step-num">05</span><h3>Automate</h3><p>Build RAG, agents, and workflow logic.</p></li>
+                <li><span class="apage-step-num">06</span><h3>Monitor</h3><p>Track quality, exceptions, and outcomes.</p></li>
+                <li><span class="apage-step-num">07</span><h3>Improve</h3><p>Refine prompts, rules, and coverage over time.</p></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section class="apage-tech" id="technology">
+        <div class="container">
+            <div class="section-header apage-tech-header">
+                <p class="section-subtitle">Stack</p>
+                <h2>Technology We Use</h2>
+                <p>Practical tools for AI, automation, data, and delivery — selected for each project.</p>
+            </div>
+            <div class="apage-tech-grid">
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--llm">
+                        <span class="apage-stack-tag">Intelligence</span>
+                        <div class="apage-stack-mark" aria-hidden="true">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <h3 class="apage-stack-name">LLMs</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head">
+                            <h4>Large Language Models</h4>
+                            <span class="apage-stack-status">In stack</span>
+                        </div>
+                        <p>Reasoning and generation models that power chat, decisions, and content across workflows.</p>
+                    </div>
+                </article>
+
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--rag">
+                        <span class="apage-stack-tag">Knowledge</span>
+                        <div class="apage-stack-mark" aria-hidden="true">
+                            <i class="bi bi-journal-richtext"></i>
+                        </div>
+                        <h3 class="apage-stack-name">RAG</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head">
+                            <h4>Retrieval-Augmented Generation</h4>
+                            <span class="apage-stack-status">In stack</span>
+                        </div>
+                        <p>Ground answers in your documents, FAQs, and internal data so AI stays accurate to your business.</p>
+                    </div>
+                </article>
+
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--agents">
+                        <span class="apage-stack-tag">Actions</span>
+                        <div class="apage-stack-mark" aria-hidden="true">
+                            <i class="bi bi-robot"></i>
+                        </div>
+                        <h3 class="apage-stack-name">AI Agents</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head">
+                            <h4>Tool-Using Agents</h4>
+                            <span class="apage-stack-status">In stack</span>
+                        </div>
+                        <p>Multi-step workers that plan, call APIs, update records, and complete tasks with guardrails.</p>
+                    </div>
+                </article>
+
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--vector">
+                        <span class="apage-stack-tag">Memory</span>
+                        <div class="apage-stack-mark" aria-hidden="true">
+                            <i class="bi bi-diagram-3"></i>
+                        </div>
+                        <h3 class="apage-stack-name">Vector DBs</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head">
+                            <h4>Embeddings &amp; Search</h4>
+                            <span class="apage-stack-status">In stack</span>
+                        </div>
+                        <p>Semantic indexing for fast retrieval across knowledge bases, tickets, and product data.</p>
+                    </div>
+                </article>
+
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--api">
+                        <span class="apage-stack-tag">Backend</span>
+                        <div class="apage-stack-mark" aria-hidden="true">
+                            <i class="bi bi-braces"></i>
+                        </div>
+                        <h3 class="apage-stack-name">Python &amp; FastAPI</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head">
+                            <h4>AI Service Layer</h4>
+                            <span class="apage-stack-status">In stack</span>
+                        </div>
+                        <p>High-performance APIs for model orchestration, validation, and secure system integration.</p>
+                    </div>
+                </article>
+
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--flow">
+                        <span class="apage-stack-tag">Orchestration</span>
+                        <div class="apage-stack-mark" aria-hidden="true">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <h3 class="apage-stack-name">Workflows</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head">
+                            <h4>APIs, Webhooks &amp; Engines</h4>
+                            <span class="apage-stack-status">In stack</span>
+                        </div>
+                        <p>Event-driven flows that connect CRMs, databases, messaging, and approval steps end to end.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="webdev-faq apage-faq">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Got Questions?</p>
+                <h2>Frequently Asked Questions</h2>
+                <p>Clear answers about AI and business automation with HAIZON.</p>
+            </div>
+            <div class="faq-accordion" id="faqAccordion">
+                <div class="faq-accordion-item active">
+                    <button class="faq-accordion-trigger" aria-expanded="true">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <path d="M12 17h.01" />
+                            </svg>
+                            <span class="faq-question-text">What is AI business automation?</span>
+                        </div>
+                        <div class="faq-chevron-wrap">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-card">
+                                <p>It means connecting AI to your real systems so repetitive work — answers, updates, document handling, and follow-ups — can run with less manual effort.</p>
+                                <div class="faq-message-icon-wrap">
+                                    <svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <path d="M12 17h.01" />
+                            </svg>
+                            <span class="faq-question-text">Can automation work with our existing software?</span>
+                        </div>
+                        <div class="faq-chevron-wrap">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-card">
+                                <p>Yes. We integrate through APIs, webhooks, and custom connectors so automation fits the tools your team already uses.</p>
+                                <div class="faq-message-icon-wrap">
+                                    <svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <path d="M12 17h.01" />
+                            </svg>
+                            <span class="faq-question-text">What is RAG?</span>
+                        </div>
+                        <div class="faq-chevron-wrap">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-card">
+                                <p>RAG (Retrieval-Augmented Generation) lets AI retrieve relevant pieces of your documents and knowledge before answering — so responses stay grounded in your business context.</p>
+                                <div class="faq-message-icon-wrap">
+                                    <svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <path d="M12 17h.01" />
+                            </svg>
+                            <span class="faq-question-text">Can you build a custom AI chatbot?</span>
+                        </div>
+                        <div class="faq-chevron-wrap">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-card">
+                                <p>Yes. We build chatbots for websites, WhatsApp, support, and sales — connected to your knowledge and systems, with human handoff when needed.</p>
+                                <div class="faq-message-icon-wrap">
+                                    <svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <path d="M12 17h.01" />
+                            </svg>
+                            <span class="faq-question-text">Can AI agents perform actions?</span>
+                        </div>
+                        <div class="faq-chevron-wrap">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-card">
+                                <p>Yes. Agents can plan steps, call tools and APIs, update records, and complete defined tasks — within the permissions and guardrails you set.</p>
+                                <div class="faq-message-icon-wrap">
+                                    <svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <path d="M12 17h.01" />
+                            </svg>
+                            <span class="faq-question-text">Can you automate document processing?</span>
+                        </div>
+                        <div class="faq-chevron-wrap">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-card">
+                                <p>Yes. We extract and validate data from invoices, forms, PDFs, and similar files, then push structured results into your databases or workflows.</p>
+                                <div class="faq-message-icon-wrap">
+                                    <svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <path d="M12 17h.01" />
+                            </svg>
+                            <span class="faq-question-text">Can automation include human approval?</span>
+                        </div>
+                        <div class="faq-chevron-wrap">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-card">
+                                <p>Absolutely. Many workflows pause for review before sending messages, updating records, or completing sensitive actions.</p>
+                                <div class="faq-message-icon-wrap">
+                                    <svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <path d="M12 17h.01" />
+                            </svg>
+                            <span class="faq-question-text">Can HAIZON integrate with our existing APIs?</span>
+                        </div>
+                        <div class="faq-chevron-wrap">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-card">
+                                <p>Yes. Custom API integration is a core part of how we connect AI automation to your stack.</p>
+                                <div class="faq-message-icon-wrap">
+                                    <svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <path d="M12 17h.01" />
+                            </svg>
+                            <span class="faq-question-text">How long does an automation project take?</span>
+                        </div>
+                        <div class="faq-chevron-wrap">
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="faq-accordion-content">
+                        <div class="faq-answer-wrapper">
+                            <div class="faq-answer-card">
+                                <p>Timelines depend on scope. A focused chatbot or document flow can ship in weeks. Multi-system agent workflows take longer. We define milestones after discovery.</p>
+                                <div class="faq-message-icon-wrap">
+                                    <svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="apage-final-cta">
+        <div class="container">
+            <div class="automation-cta">
+                <h3 class="automation-cta-title">What Could Your Business Automate?</h3>
+                <p class="automation-cta-text">Tell us about the repetitive work slowing your business down. We'll help identify where AI and automation can create the biggest impact.</p>
+                <div class="automation-cta-actions">
+                    <a href="#contact" class="btn btn-primary">Start Your Automation</a>
+                    <a href="#contact" class="btn btn-secondary automation-btn-secondary">Talk to HAIZON</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+        <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-intro">
+                    <p class="section-subtitle">Get In Touch</p>
+                    <h2>Let's Build Something That Matters.</h2>
+                    <p class="contact-lead">Have a business challenge, software idea, or AI project in mind? Tell us what you're trying to achieve and we'll help shape the right solution.</p>
+                    <ul class="contact-cards">
+                        <li class="contact-card">
+                            <div class="contact-card-icon" aria-hidden="true"><i class="bi bi-envelope"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Email</span>
+                                <a class="contact-card-value" href="mailto:info@haizon.com">info@haizon.com</a>
+                            </div>
+                        </li>
+                        <li class="contact-card">
+                            <div class="contact-card-icon" aria-hidden="true"><i class="bi bi-telephone"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Phone</span>
+                                <a class="contact-card-value" href="tel:+15551234567">+1 (555) 123-4567</a>
+                            </div>
+                        </li>
+                        <li class="contact-card">
+                            <div class="contact-card-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Location</span>
+                                <span class="contact-card-value">123 Innovation Street, Tech City, TC 12345</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="contact-social social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    </div>
+                </div>
+                <div class="contact-panel">
+                    <span class="contact-panel-eyebrow">Start a Conversation</span>
+                    <h3>Tell us about your project</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="contact-form-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Work Email</label>
+                                <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@company.com">
+                            </div>
+                            <div class="form-group form-group--full">
+                                <label for="company">Company / Organization</label>
+                                <input type="text" id="company" name="company" autocomplete="organization" placeholder="Company name">
+                            </div>
+                            <div class="form-group">
+                                <label for="projectType">Project Type</label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="" disabled>Select a service</option>
+                                    <option value="automation" selected>AI &amp; Business Automation</option>
+                                    <option value="ml">Machine Learning / AI</option>
+                                    <option value="web">Custom Web Development</option>
+                                    <option value="software">Software Solutions</option>
+                                    <option value="data">Data Science &amp; Analytics</option>
+                                    <option value="uiux">UI/UX &amp; Digital Products</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Budget / Project Scope</label>
+                                <select id="budget" name="budget">
+                                    <option value="" disabled selected>Select a range</option>
+                                    <option value="unsure">Not sure yet</option>
+                                    <option value="small">Small project</option>
+                                    <option value="medium">Medium project</option>
+                                    <option value="large">Large / Enterprise</option>
+                                    <option value="discuss">Let's discuss</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-group--full">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required placeholder="Tell us about your project, challenge, or idea..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="form-submit">Discuss Your Project <span aria-hidden="true">→</span></button>
+                    </form>
+                    <p class="contact-trust">Tell us what you're building. We'll take it from there.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-stable">
+        <div class="footer-accent" aria-hidden="true"></div>
+        <div class="footer-content">
+            <div class="footer-section footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="HAIZON INNOVATIONS" class="footer-logo-img" width="180" height="48" decoding="async">
+                </div>
+                <p class="footer-pillars">AI • Software • Data</p>
+                <p>Building intelligent digital solutions for modern businesses.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Services</h3>
+                <ul class="footer-links">
+                    <li><a href="automation.html"><span>AI &amp; Business Automation</span></a></li>
+                    <li><a href="machine-learning.html"><span>Machine Learning, Deep Learning &amp; NLP</span></a></li>
+                    <li><a href="custom-web-development.html"><span>Custom Web Development</span></a></li>
+                    <li><a href="software-solutions.html"><span>Software Solutions</span></a></li>
+                    <li><a href="data-science.html"><span>Data Science &amp; Analytics</span></a></li>
+                    <li><a href="ui-ux.html"><span>UI/UX &amp; Digital Products</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#about"><span>About</span></a></li>
+                    <li><a href="index.html#why-us"><span>Why HAIZON</span></a></li>
+                    <li><a href="index.html#portfolio"><span>Portfolio</span></a></li>
+                    <li><a href="#contact"><span>Contact</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-connect">
+                <h3 class="footer-title">Connect</h3>
+                <ul class="contact-info">
+                    <li>
+                        <span class="connect-label">Email</span>
+                        <a href="mailto:info@haizon.com">info@haizon.com</a>
+                    </li>
+                    <li>
+                        <span class="connect-label">Phone</span>
+                        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                    </li>
+                    <li>
+                        <span class="connect-label">Location</span>
+                        <span>123 Innovation Street, Tech City, TC 12345</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2026 <span class="brand-highlight">HAIZON INNOVATIONS</span>. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="#">Terms of Service</a>
+                    <span class="separator">•</span>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">↑</button>
+    <a href="https://wa.me/+923415482209?text=Hello%20HAIZON%20INNOVATIONS,%20I%20would%20like%20to%20know%20more%20about%20your%20services"
+        target="_blank" rel="noopener noreferrer" class="whatsapp-button" aria-label="Contact us on WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.982-3.648-.239-.375a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <span class="whatsapp-pulse"></span>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <script src="index.js"></script>
+    <script src="automation.js"></script>
+</body>
+</html>

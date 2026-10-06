@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="HAIZON INNOVATIONS - Data Science &amp; Analytics. Turn complex data into clear insights, dashboards, forecasts, and decisions your business can act on.">
+    <meta name="keywords"
+        content="data science, analytics, business intelligence, dashboards, forecasting, data visualization, HAIZON INNOVATIONS">
+    <title>Data Science &amp; Analytics | HAIZON INNOVATIONS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="data-page">
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="HAIZON INNOVATIONS" class="logo-img logo" width="224" height="56" decoding="async">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li class="nav-dropdown">
+                    <a href="index.html#services">Services <svg class="dropdown-arrow" width="10" height="10" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="automation.html">AI &amp; Business Automation</a></li>
+                        <li><a href="machine-learning.html">Machine Learning, Deep Learning &amp; NLP</a></li>
+                        <li><a href="custom-web-development.html">Custom Web Development</a></li>
+                        <li><a href="software-solutions.html">Software Solutions</a></li>
+                        <li><a href="data-science.html" aria-current="page">Data Science &amp; Analytics</a></li>
+                        <li><a href="ui-ux.html">UI/UX &amp; Digital Products</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Get Started</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="webdev-hero webdev-hero-stable data-hero" id="home">
+        <div class="webdev-hero-background data-hero-background" id="heroBackground">
+            <div class="data-hero-static" aria-hidden="true"></div>
+            <video id="heroVideo" class="webdev-hero-video" muted loop playsinline preload="none" aria-hidden="true" disablePictureInPicture hidden></video>
+            <div class="webdev-hero-video-overlay data-hero-overlay"></div>
+        </div>
+        <div class="webdev-hero-container data-hero-container">
+            <div class="webdev-hero-content-wrapper data-hero-copy">
+                <div class="webdev-hero-badge">
+                    <svg class="badge-icon" width="8" height="8" viewBox="0 0 8 8" fill="currentColor"><circle cx="4" cy="4" r="4"/></svg>
+                    <span>DATA SCIENCE &amp; ANALYTICS</span>
+                </div>
+                <h1 class="webdev-hero-title">
+                    <span class="webdev-title-line-1">Turn Data Into</span>
+                    <span class="webdev-title-line-2">Better Decisions.</span>
+                </h1>
+                <p class="webdev-hero-description">
+                    Transform complex data into clear insights, meaningful patterns, forecasts, and decisions your business can act on.
+                </p>
+                <div class="webdev-hero-cta data-hero-cta">
+                    <a href="#contact" class="btn btn-primary">Unlock Your Data</a>
+                    <a href="#capabilities" class="btn btn-secondary">Explore Our Capabilities</a>
+                </div>
+            </div>
+            <div class="data-hero-visual" aria-hidden="true">
+                <svg class="data-hero-svg" viewBox="0 0 520 340" focusable="false">
+                    <defs>
+                        <linearGradient id="dsHeroGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#5D6D7E" stop-opacity="0.2"/>
+                            <stop offset="55%" stop-color="#D4A84B" stop-opacity="0.18"/>
+                            <stop offset="100%" stop-color="#D4A84B" stop-opacity="0.28"/>
+                        </linearGradient>
+                        <filter id="dsSoftGlow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="3" result="b"/>
+                            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                        </filter>
+                    </defs>
+                    <rect x="8" y="28" width="504" height="284" rx="22" fill="url(#dsHeroGlow)" opacity="0.35"/>
+                    <!-- Flow path left → right -->
+                    <path id="dsMainFlow" d="M48,170 C120,170 160,170 210,170 C270,170 300,170 360,170 C410,170 440,170 472,170" fill="none" stroke="rgba(212,168,75,0.35)" stroke-width="1.5" stroke-dasharray="4 6"/>
+                    <!-- RAW DATA: scattered points -->
+                    <g opacity="0.85">
+                        <circle cx="42" cy="120" r="2.2" fill="#7B8B9A"/><circle cx="58" cy="148" r="1.8" fill="#D4A84B"/><circle cx="36" cy="175" r="2" fill="#9AA8B5"/>
+                        <circle cx="62" cy="198" r="1.6" fill="#7B8B9A"/><circle cx="48" cy="220" r="2.1" fill="#E4C06B"/><circle cx="70" cy="165" r="1.5" fill="#7B8B9A"/>
+                        <text x="54" y="92" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Outfit,sans-serif" font-size="9" letter-spacing="1.2">RAW DATA</text>
+                    </g>
+                    <!-- STRUCTURED: mini table -->
+                    <g>
+                        <rect x="108" y="128" width="72" height="84" rx="8" fill="rgba(10,10,12,0.88)" stroke="rgba(255,255,255,0.12)"/>
+                        <rect x="116" y="138" width="56" height="6" rx="2" fill="rgba(212,168,75,0.45)"/>
+                        <rect x="116" y="152" width="40" height="5" rx="2" fill="rgba(123,139,154,0.55)"/>
+                        <rect x="116" y="164" width="48" height="5" rx="2" fill="rgba(123,139,154,0.4)"/>
+                        <rect x="116" y="176" width="36" height="5" rx="2" fill="rgba(123,139,154,0.5)"/>
+                        <rect x="116" y="188" width="52" height="5" rx="2" fill="rgba(123,139,154,0.35)"/>
+                        <text x="144" y="248" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-family="Outfit,sans-serif" font-size="8" letter-spacing="0.8">STRUCTURE</text>
+                    </g>
+                    <!-- ANALYSIS: bars -->
+                    <g>
+                        <rect x="208" y="128" width="72" height="84" rx="8" fill="rgba(10,10,12,0.9)" stroke="rgba(93,109,126,0.45)"/>
+                        <rect class="data-bar" x="218" y="178" width="10" height="22" rx="2" fill="rgba(123,139,154,0.7)"/>
+                        <rect class="data-bar" x="232" y="164" width="10" height="36" rx="2" fill="rgba(212,168,75,0.55)"/>
+                        <rect class="data-bar" x="246" y="152" width="10" height="48" rx="2" fill="rgba(123,139,154,0.8)"/>
+                        <rect class="data-bar" x="260" y="170" width="10" height="30" rx="2" fill="rgba(228,192,107,0.5)"/>
+                        <text x="244" y="248" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-family="Outfit,sans-serif" font-size="8" letter-spacing="0.8">ANALYSIS</text>
+                    </g>
+                    <!-- VISUALIZATION: trend -->
+                    <g>
+                        <rect x="308" y="128" width="72" height="84" rx="8" fill="rgba(10,10,12,0.92)" stroke="rgba(212,168,75,0.35)"/>
+                        <polyline points="318,190 330,178 342,182 354,158 366,164 374,148" fill="none" stroke="#D4A84B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="374" cy="148" r="3" fill="#E4C06B" filter="url(#dsSoftGlow)"/>
+                        <text x="344" y="248" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-family="Outfit,sans-serif" font-size="8" letter-spacing="0.8">VISUALIZE</text>
+                    </g>
+                    <!-- INSIGHT + DECISION -->
+                    <g>
+                        <rect x="408" y="118" width="88" height="48" rx="10" fill="rgba(10,10,12,0.95)" stroke="rgba(212,168,75,0.55)" stroke-width="1.4" filter="url(#dsSoftGlow)"/>
+                        <text x="452" y="147" text-anchor="middle" fill="#fff" font-family="Outfit,sans-serif" font-size="11" font-weight="700" letter-spacing="1">INSIGHT</text>
+                        <rect x="408" y="186" width="88" height="40" rx="10" fill="rgba(212,168,75,0.14)" stroke="rgba(212,168,75,0.4)"/>
+                        <text x="452" y="211" text-anchor="middle" fill="rgba(228,192,107,0.95)" font-family="Outfit,sans-serif" font-size="10" font-weight="600" letter-spacing="1">DECISION</text>
+                    </g>
+                    <circle class="data-hero-particle" r="2.4" fill="#D4A84B"><animateMotion dur="7s" repeatCount="indefinite"><mpath href="#dsMainFlow"/></animateMotion></circle>
+                    <circle class="data-hero-particle" r="2" fill="#E4C06B"><animateMotion dur="9s" repeatCount="indefinite" begin="1.2s"><mpath href="#dsMainFlow"/></animateMotion></circle>
+                    <circle class="data-hero-particle" r="1.8" fill="#7B8B9A"><animateMotion dur="11s" repeatCount="indefinite" begin="2.4s"><mpath href="#dsMainFlow"/></animateMotion></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="webdev-hero-bottom-overlay"></div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="data-section data-section--light" id="intro">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Data That Tells a Story</p>
+                <h2>Your Data Already Knows More Than You Think.</h2>
+                <p>The challenge is not simply collecting data. It is turning that data into information people can understand and decisions teams can act on.</p>
+            </div>
+            <ol class="data-flow data-flow--horizontal" aria-label="Data to decision flow">
+                <li><strong>Data</strong><span>Thousands of records</span></li>
+                <li><strong>Analysis</strong><span>Patterns &amp; relationships</span></li>
+                <li><strong>Insight</strong><span>What is changing — and why?</span></li>
+                <li><strong>Decision</strong><span>What should we do next?</span></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+    <section class="data-section data-section--dark" id="capabilities">
+        <div class="container">
+            <div class="section-header data-header--light">
+                <p class="section-subtitle">Our Capabilities</p>
+                <h2>From Raw Data to Actionable Insight.</h2>
+                <p>Practical analytics capabilities designed to help teams understand performance, spot patterns, and make clearer decisions.</p>
+            </div>
+            <div class="data-card-grid">
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-search"></i></div>
+                    <h3>Data Analysis</h3>
+                    <p>Explore patterns, trends, and relationships to answer specific business questions.</p>
+                </article>
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-bar-chart-steps"></i></div>
+                    <h3>Business Intelligence</h3>
+                    <p>Transform operational data into structured reporting for teams and leadership.</p>
+                </article>
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-speedometer2"></i></div>
+                    <h3>Interactive Dashboards</h3>
+                    <p>Filter, explore, and monitor key metrics in one connected view.</p>
+                </article>
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-pie-chart"></i></div>
+                    <h3>Data Visualization</h3>
+                    <p>Communicate findings through clear charts, panels, and visual summaries.</p>
+                </article>
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-graph-up-arrow"></i></div>
+                    <h3>Predictive Analytics</h3>
+                    <p>Use historical data to anticipate outcomes and support forward-looking decisions.</p>
+                </article>
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-calendar-range"></i></div>
+                    <h3>Forecasting</h3>
+                    <p>Plan demand, revenue, inventory, and resources with data-driven projections.</p>
+                </article>
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-calculator"></i></div>
+                    <h3>Statistical Analysis</h3>
+                    <p>Apply rigorous methods to validate findings and measure uncertainty.</p>
+                </article>
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-funnel"></i></div>
+                    <h3>Data Preparation</h3>
+                    <p>Clean, transform, and structure raw data for reliable analysis.</p>
+                </article>
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-diagram-2"></i></div>
+                    <h3>Data Pipelines</h3>
+                    <p>Connect sources, automate collection, and keep data flowing consistently.</p>
+                </article>
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-file-earmark-bar-graph"></i></div>
+                    <h3>Reporting &amp; Insights</h3>
+                    <p>Turn analysis into clear reports and practical recommendations.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIFECYCLE -->
+    <section class="data-section data-section--light" id="lifecycle">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">The Data Journey</p>
+                <h2>From Raw Records to Useful Decisions.</h2>
+                <p>A structured path that turns scattered data into clarity your team can use.</p>
+            </div>
+            <ol class="data-process" aria-label="Data analytics lifecycle">
+                <li><span>01</span><h3>Collect</h3><p>Gather data from databases, files, APIs, and operational systems.</p></li>
+                <li><span>02</span><h3>Clean</h3><p>Resolve gaps, duplicates, and inconsistencies in raw records.</p></li>
+                <li><span>03</span><h3>Structure</h3><p>Organize and prepare data for reliable analysis and reporting.</p></li>
+                <li><span>04</span><h3>Analyze</h3><p>Apply statistical and analytical methods to find patterns.</p></li>
+                <li><span>05</span><h3>Visualize</h3><p>Present findings through charts, dashboards, and summaries.</p></li>
+                <li><span>06</span><h3>Interpret</h3><p>Translate patterns into clear meaning for stakeholders.</p></li>
+                <li><span>07</span><h3>Decide</h3><p>Use evidence to inform planning, operations, and strategy.</p></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- DATA ANALYSIS -->
+    <section class="data-section data-section--dark" id="analysis">
+        <div class="container">
+            <div class="data-split">
+                <div class="data-split-copy">
+                    <p class="section-subtitle">Data Analysis</p>
+                    <h2>Understand What Happened — and Why.</h2>
+                    <p>We analyze historical and operational data to identify trends, patterns, relationships, anomalies, performance changes, segment differences, and operational behavior.</p>
+                    <ul class="data-side-panel">
+                        <li>Trend Detected</li>
+                        <li>Performance Shift</li>
+                        <li>Anomaly</li>
+                        <li>Top Segment</li>
+                    </ul>
+                </div>
+                <div class="data-chart data-analytical-panel" aria-hidden="true">
+                    <div class="data-panel-header">
+                        <span class="data-panel-label">Conceptual Analytical Panel</span>
+                        <span class="data-panel-badge">Example</span>
+                    </div>
+                    <div class="data-panel-body">
+                        <div class="data-panel-metrics">
+                            <div class="data-panel-metric"><span>Metric A</span><strong>—</strong></div>
+                            <div class="data-panel-metric"><span>Metric B</span><strong>—</strong></div>
+                            <div class="data-panel-metric"><span>Metric C</span><strong>—</strong></div>
+                        </div>
+                        <svg class="data-panel-chart" viewBox="0 0 320 120" focusable="false">
+                            <polyline class="data-chart-line" points="10,90 50,70 90,75 130,45 170,55 210,30 250,40 290,20" fill="none" stroke="rgba(212,168,75,0.85)" stroke-width="2"/>
+                            <line x1="10" y1="100" x2="310" y2="100" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BUSINESS INTELLIGENCE -->
+    <section class="data-section data-section--light" id="bi">
+        <div class="container">
+            <div class="data-split data-split--reverse">
+                <div class="data-split-copy">
+                    <p class="section-subtitle">Business Intelligence</p>
+                    <h2>Make Important Numbers Easier to Understand.</h2>
+                    <p>BI brings together operational metrics into structured views — so teams and leadership can monitor performance without digging through spreadsheets.</p>
+                    <ul class="data-app-list">
+                        <li>Revenue</li>
+                        <li>Orders</li>
+                        <li>Customers</li>
+                        <li>Conversion</li>
+                        <li>Performance</li>
+                        <li>Growth</li>
+                    </ul>
+                </div>
+                <div class="data-dashboard data-bi-dashboard" aria-hidden="true">
+                    <div class="data-dashboard-header">
+                        <span>Conceptual BI Dashboard</span>
+                        <small>Example layout — not live data</small>
+                    </div>
+                    <div class="data-dashboard-grid">
+                        <div class="data-dash-kpi"><span>Revenue</span><strong>—</strong></div>
+                        <div class="data-dash-kpi"><span>Orders</span><strong>—</strong></div>
+                        <div class="data-dash-kpi"><span>Customers</span><strong>—</strong></div>
+                        <div class="data-dash-kpi"><span>Conversion</span><strong>—</strong></div>
+                        <div class="data-dash-kpi"><span>Growth</span><strong>—</strong></div>
+                        <div class="data-dash-chart">
+                            <svg viewBox="0 0 200 80" focusable="false">
+                                <rect class="data-bar" x="20" y="40" width="24" height="35" rx="3" fill="rgba(212,168,75,0.5)"/>
+                                <rect class="data-bar" x="55" y="25" width="24" height="50" rx="3" fill="rgba(212,168,75,0.65)"/>
+                                <rect class="data-bar" x="90" y="35" width="24" height="40" rx="3" fill="rgba(212,168,75,0.5)"/>
+                                <rect class="data-bar" x="125" y="15" width="24" height="60" rx="3" fill="rgba(212,168,75,0.75)"/>
+                                <rect class="data-bar" x="160" y="30" width="24" height="45" rx="3" fill="rgba(212,168,75,0.55)"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE DASHBOARDS -->
+    <section class="data-section data-section--dark" id="dashboards">
+        <div class="container">
+            <div class="section-header data-header--light">
+                <p class="section-subtitle">Interactive Analytics</p>
+                <h2>Give Teams a Clear View of What Matters.</h2>
+                <p>Dashboards can bring together KPIs, trends, filters, segments, comparisons, reports, and operational metrics in one connected view.</p>
+            </div>
+            <div class="data-dashboard data-interactive-flow" aria-hidden="true">
+                <ol class="data-flow data-flow--horizontal">
+                    <li>Filter</li>
+                    <li>Data</li>
+                    <li>Viz</li>
+                    <li>Insight</li>
+                </ol>
+                <div class="data-interactive-panel">
+                    <div class="data-filter-row">
+                        <span class="data-filter-chip">Date Range</span>
+                        <span class="data-filter-chip">Region</span>
+                        <span class="data-filter-chip">Category</span>
+                    </div>
+                    <svg viewBox="0 0 400 100" focusable="false">
+                        <polyline class="data-chart-line" points="20,70 80,55 140,60 200,35 260,45 320,25 380,30" fill="none" stroke="rgba(212,168,75,0.8)" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATA VISUALIZATION -->
+    <section class="data-section data-section--light" id="visualization">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Data Visualization</p>
+                <h2>Make Complex Information Easy to See.</h2>
+                <p>Different questions call for different visual approaches — each designed to make complex data easier to understand.</p>
+            </div>
+            <div class="data-viz-grid">
+                <article class="data-viz-panel">
+                    <h3>Trend</h3>
+                    <svg viewBox="0 0 160 90" focusable="false" aria-hidden="true">
+                        <line x1="18" y1="78" x2="148" y2="78" stroke="#C5CCD3" stroke-width="1"/>
+                        <line x1="18" y1="18" x2="18" y2="78" stroke="#C5CCD3" stroke-width="1"/>
+                        <polyline points="24,68 48,58 72,62 96,40 120,46 142,28" fill="none" stroke="#D4A84B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="142" cy="28" r="3.5" fill="#E4C06B"/>
+                    </svg>
+                </article>
+                <article class="data-viz-panel">
+                    <h3>Comparison</h3>
+                    <svg viewBox="0 0 160 90" focusable="false" aria-hidden="true">
+                        <line x1="18" y1="78" x2="148" y2="78" stroke="#C5CCD3" stroke-width="1"/>
+                        <rect x="30" y="40" width="20" height="38" rx="3" fill="#D4A84B" fill-opacity="0.55"/>
+                        <rect x="58" y="24" width="20" height="54" rx="3" fill="#D4A84B" fill-opacity="0.85"/>
+                        <rect x="86" y="48" width="20" height="30" rx="3" fill="#7B8B9A" fill-opacity="0.7"/>
+                        <rect x="114" y="34" width="20" height="44" rx="3" fill="#D4A84B" fill-opacity="0.7"/>
+                    </svg>
+                </article>
+                <article class="data-viz-panel">
+                    <h3>Distribution</h3>
+                    <svg viewBox="0 0 160 90" focusable="false" aria-hidden="true">
+                        <line x1="18" y1="78" x2="148" y2="78" stroke="#C5CCD3" stroke-width="1"/>
+                        <path d="M24,72 C40,72 48,28 80,28 C112,28 120,72 136,72" fill="none" stroke="#D4A84B" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="80" y1="78" x2="80" y2="26" stroke="#D4A84B" stroke-opacity="0.45" stroke-dasharray="3 3"/>
+                    </svg>
+                </article>
+                <article class="data-viz-panel">
+                    <h3>Relationship</h3>
+                    <svg viewBox="0 0 160 90" focusable="false" aria-hidden="true">
+                        <line x1="18" y1="78" x2="148" y2="78" stroke="#C5CCD3" stroke-width="1"/>
+                        <line x1="18" y1="18" x2="18" y2="78" stroke="#C5CCD3" stroke-width="1"/>
+                        <line x1="30" y1="68" x2="138" y2="26" stroke="#D4A84B" stroke-opacity="0.4" stroke-width="1.5"/>
+                        <circle cx="42" cy="62" r="4" fill="#D4A84B"/>
+                        <circle cx="68" cy="50" r="4" fill="#D4A84B"/>
+                        <circle cx="96" cy="42" r="4" fill="#D4A84B"/>
+                        <circle cx="124" cy="30" r="4" fill="#E4C06B"/>
+                    </svg>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREDICTIVE ANALYTICS -->
+    <section class="data-section data-section--dark" id="predictive">
+        <div class="container">
+            <div class="data-split">
+                <div class="data-split-copy">
+                    <p class="section-subtitle">Predictive Analytics</p>
+                    <h2>Use Historical Data to Prepare for What Comes Next.</h2>
+                    <p>Predictive analytics uses historical patterns to estimate what may happen next — supporting planning for demand, revenue, workload, customer behavior, and inventory. Accuracy is never guaranteed.</p>
+                </div>
+                <div class="data-chart data-forecast-visual" aria-hidden="true">
+                    <div class="data-panel-header">
+                        <span class="data-panel-label">Historical → Forecast</span>
+                        <span class="data-panel-badge">Conceptual</span>
+                    </div>
+                    <svg viewBox="0 0 360 140" focusable="false">
+                        <polyline class="data-chart-line data-chart-line--hist" points="20,100 60,85 100,90 140,70 180,75 200,65" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
+                        <polyline class="data-chart-line data-chart-line--forecast" points="200,65 240,50 280,55 320,40" fill="none" stroke="rgba(212,168,75,0.9)" stroke-width="2" stroke-dasharray="6 4"/>
+                        <line x1="200" y1="20" x2="200" y2="120" stroke="rgba(212,168,75,0.35)" stroke-dasharray="4"/>
+                        <text x="110" y="130" fill="rgba(255,255,255,0.45)" font-size="10" font-family="Outfit,sans-serif">Historical</text>
+                        <text x="250" y="130" fill="rgba(212,168,75,0.7)" font-size="10" font-family="Outfit,sans-serif">Forecast</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORECASTING -->
+    <section class="data-section data-section--light" id="forecasting">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Forecasting</p>
+                <h2>Plan with Data, Not Guesswork.</h2>
+                <p>Forecasting models can support operational and strategic planning across key business areas.</p>
+            </div>
+            <div class="data-forecast-grid">
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-box-seam"></i></div>
+                    <h3>Demand Forecasting</h3>
+                    <p>Anticipate product or service demand to align inventory and capacity.</p>
+                </article>
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-cash-stack"></i></div>
+                    <h3>Revenue Forecasting</h3>
+                    <p>Project revenue trends to support budgeting and financial planning.</p>
+                </article>
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-archive"></i></div>
+                    <h3>Inventory Forecasting</h3>
+                    <p>Estimate stock needs to reduce shortages and overstock situations.</p>
+                </article>
+                <article class="data-card">
+                    <div class="data-card-icon" aria-hidden="true"><i class="bi bi-people"></i></div>
+                    <h3>Resource Planning</h3>
+                    <p>Forecast staffing and resource needs based on workload patterns.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="data-section data-section--dark" id="statistics">
+        <div class="container">
+            <div class="section-header data-header--light">
+                <p class="section-subtitle">Statistics</p>
+                <h2>Measure What the Data Is Really Telling You.</h2>
+            </div>
+            <div class="data-stats-grid">
+                <article class="data-mini-card"><i class="bi bi-distribute-vertical" aria-hidden="true"></i><h3>Distribution</h3></article>
+                <article class="data-mini-card"><i class="bi bi-arrow-left-right" aria-hidden="true"></i><h3>Correlation</h3></article>
+                <article class="data-mini-card"><i class="bi bi-graph-up" aria-hidden="true"></i><h3>Variance</h3></article>
+                <article class="data-mini-card"><i class="bi bi-percent" aria-hidden="true"></i><h3>Probability</h3></article>
+                <article class="data-mini-card"><i class="bi bi-check2-circle" aria-hidden="true"></i><h3>Significance</h3></article>
+                <article class="data-mini-card"><i class="bi bi-collection" aria-hidden="true"></i><h3>Segmentation</h3></article>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATA PREPARATION -->
+    <section class="data-section data-section--light" id="preparation">
+        <div class="container">
+            <div class="data-split data-split--reverse">
+                <div class="data-split-copy">
+                    <p class="section-subtitle">Data Preparation</p>
+                    <h2>Reliable Insights Start With Reliable Data.</h2>
+                    <p>Most analytics projects spend significant effort preparing data — cleaning, transforming, and validating before analysis begins. Data is not always perfectly clean.</p>
+                </div>
+                <ol class="data-flow data-flow--vertical" aria-label="Data preparation flow">
+                    <li>Raw Data</li>
+                    <li>Remove Duplicates</li>
+                    <li>Handle Missing Values</li>
+                    <li>Standardize</li>
+                    <li>Transform</li>
+                    <li>Validate</li>
+                    <li>Analysis-Ready Data</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATA PIPELINES -->
+    <section class="data-section data-section--dark" id="pipelines">
+        <div class="container">
+            <div class="section-header data-header--light">
+                <p class="section-subtitle">Data Pipelines</p>
+                <h2>Keep Data Moving From Source to Insight.</h2>
+                <p>Pipelines connect sources, automate extraction and transformation, and deliver consistent data for analysis and reporting.</p>
+            </div>
+            <ol class="data-flow data-flow--horizontal" aria-label="Pipeline stages">
+                <li>Data Sources</li>
+                <li>Ingestion</li>
+                <li>Processing</li>
+                <li>Storage</li>
+                <li>Analytics</li>
+                <li>Dashboards / Reports</li>
+            </ol>
+            <div class="data-pipeline" aria-hidden="true">
+                <ul class="data-pipeline-sources">
+                    <li>Databases</li>
+                    <li>APIs</li>
+                    <li>Files</li>
+                    <li>Business Systems</li>
+                </ul>
+                <div class="data-pipeline-core">Processing Pipeline</div>
+                <div class="data-pipeline-dest">Analytics · Dashboards · Reports</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATA SCIENCE + ML -->
+    <section class="data-section data-section--light" id="with-ml">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Data Science + AI</p>
+                <h2>Analytics Explains the Data. Models Can Go Further.</h2>
+                <p>Data science explores and explains. Machine learning learns and predicts. Together they turn data into deeper intelligence.</p>
+            </div>
+            <div class="data-compare">
+                <article class="data-compare-col">
+                    <h3>Data Science &amp; Analytics</h3>
+                    <ul>
+                        <li>Understanding data</li>
+                        <li>Finding patterns</li>
+                        <li>Visualization</li>
+                        <li>Reporting</li>
+                        <li>Forecasting</li>
+                        <li>Decision support</li>
+                    </ul>
+                </article>
+                <article class="data-compare-col data-compare-col--accent">
+                    <h3>Machine Learning</h3>
+                    <ul>
+                        <li>Prediction</li>
+                        <li>Classification</li>
+                        <li>Recommendations</li>
+                        <li>Anomaly detection</li>
+                        <li>Learned patterns</li>
+                    </ul>
+                </article>
+            </div>
+            <ol class="data-flow data-flow--horizontal" aria-label="Data to intelligence flow">
+                <li>Data</li>
+                <li>Analysis</li>
+                <li>Insight</li>
+                <li>Model</li>
+                <li>Intelligence</li>
+            </ol>
+            <div class="data-bridge-cta">
+                <a href="machine-learning.html" class="btn btn-secondary">Explore AI Solutions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATA + SOFTWARE -->
+    <section class="data-section data-section--dark" id="with-software">
+        <div class="container">
+            <div class="section-header data-header--light">
+                <p class="section-subtitle">Data + Software</p>
+                <h2>Put Insights Where Teams Actually Work.</h2>
+                <p>Analytics becomes more useful when connected to the software people already use.</p>
+            </div>
+            <ol class="data-flow data-flow--horizontal" aria-label="Software to decision flow">
+                <li>Software System</li>
+                <li>Data</li>
+                <li>Analytics</li>
+                <li>Dashboard</li>
+                <li>Decision</li>
+            </ol>
+            <div class="data-bridge-cta">
+                <a href="software-solutions.html" class="btn btn-secondary">Explore Software Solutions</a>
+                <a href="custom-web-development.html" class="btn btn-secondary">Explore Web Development</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATA + AUTOMATION -->
+    <section class="data-section data-section--light" id="with-automation">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Data + Automation</p>
+                <h2>Turn Insights Into Action.</h2>
+                <p>Analytics can identify what is happening. Automation can help turn defined conditions and insights into operational actions.</p>
+            </div>
+            <ol class="data-flow data-flow--horizontal" aria-label="Data to automation flow">
+                <li>Data</li>
+                <li>Insight</li>
+                <li>Trigger</li>
+                <li>Automation</li>
+                <li>Action</li>
+            </ol>
+            <div class="data-bridge-cta">
+                <a href="automation.html" class="btn btn-secondary">Explore AI Automation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVANCED ANALYTICS -->
+    <section class="data-section data-section--dark" id="advanced">
+        <div class="container">
+            <div class="section-header data-header--light">
+                <p class="section-subtitle">Advanced Analytics</p>
+                <h2>Go Deeper When the Question Requires It.</h2>
+            </div>
+            <div class="data-stats-grid">
+                <article class="data-mini-card"><h3>Segmentation</h3></article>
+                <article class="data-mini-card"><h3>Cohort Analysis</h3></article>
+                <article class="data-mini-card"><h3>Anomaly Detection</h3></article>
+                <article class="data-mini-card"><h3>Correlation Analysis</h3></article>
+                <article class="data-mini-card"><h3>Trend Analysis</h3></article>
+                <article class="data-mini-card"><h3>Root Cause Analysis</h3></article>
+            </div>
+        </div>
+    </section>
+
+    <!-- INDUSTRIES -->
+    <section class="data-section data-section--light" id="industries">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Applications</p>
+                <h2>Analytics Across Different Industries.</h2>
+                <p>Data challenges vary by industry — we adapt methods and deliverables to your context.</p>
+            </div>
+            <div class="data-industry-grid">
+                <article class="data-card data-card--light"><h3>Healthcare</h3><p>Operational analytics, service data analysis, and reporting — without diagnostic claims.</p></article>
+                <article class="data-card data-card--light"><h3>Finance</h3><p>Financial analysis, risk-related analytics, and forecasting support for planning.</p></article>
+                <article class="data-card data-card--light"><h3>Retail</h3><p>Sales analysis, customer segmentation, and demand insights for commercial teams.</p></article>
+                <article class="data-card data-card--light"><h3>Manufacturing</h3><p>Production analytics, quality trends, and operational monitoring.</p></article>
+                <article class="data-card data-card--light"><h3>Education</h3><p>Performance analysis, institutional reporting, and operational insights.</p></article>
+                <article class="data-card data-card--light"><h3>Enterprise</h3><p>KPI reporting, operational analytics, and management dashboards.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section class="apage-tech data-tech" id="technology">
+        <div class="container">
+            <div class="section-header apage-tech-header">
+                <p class="section-subtitle">Technology</p>
+                <h2>The Tools Behind the Analysis.</h2>
+                <p>Practical stack choices for data work, visualization, and delivery — selected for each project.</p>
+            </div>
+            <div class="apage-tech-grid">
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--llm">
+                        <span class="apage-stack-tag">Languages</span>
+                        <div class="apage-stack-mark" aria-hidden="true"><i class="bi bi-braces"></i></div>
+                        <h3 class="apage-stack-name">Python &amp; SQL</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head"><h4>Python · SQL · R</h4><span class="apage-stack-status">In stack</span></div>
+                        <p>Core languages for analysis, querying, and statistical work.</p>
+                    </div>
+                </article>
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--vector">
+                        <span class="apage-stack-tag">Libraries</span>
+                        <div class="apage-stack-mark" aria-hidden="true"><i class="bi bi-table"></i></div>
+                        <h3 class="apage-stack-name">Data Libraries</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head"><h4>Pandas · NumPy · SciPy</h4><span class="apage-stack-status">In stack</span></div>
+                        <p>Preparation, transformation, and numerical analysis.</p>
+                    </div>
+                </article>
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--api">
+                        <span class="apage-stack-tag">Storage</span>
+                        <div class="apage-stack-mark" aria-hidden="true"><i class="bi bi-database"></i></div>
+                        <h3 class="apage-stack-name">Databases</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head"><h4>PostgreSQL · MongoDB · SQL</h4><span class="apage-stack-status">In stack</span></div>
+                        <p>Structured storage and query layers for analytics workloads.</p>
+                    </div>
+                </article>
+                <article class="apage-stack-card">
+                    <div class="apage-stack-visual apage-stack-visual--flow">
+                        <span class="apage-stack-tag">Viz</span>
+                        <div class="apage-stack-mark" aria-hidden="true"><i class="bi bi-bar-chart-line"></i></div>
+                        <h3 class="apage-stack-name">Visualization</h3>
+                    </div>
+                    <div class="apage-stack-body">
+                        <div class="apage-stack-body-head"><h4>Custom Dashboards · SVG · Web Charts</h4><span class="apage-stack-status">In stack</span></div>
+                        <p>Clear visual delivery through dashboards and embedded analytics.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW WE WORK -->
+    <section class="data-section data-section--light" id="process">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">How We Work</p>
+                <h2>A Practical Approach to Data.</h2>
+            </div>
+            <ol class="data-work-process">
+                <li><span>01</span><h3>Understand</h3><p>Define the business question and desired outcome.</p></li>
+                <li><span>02</span><h3>Collect</h3><p>Identify relevant data sources.</p></li>
+                <li><span>03</span><h3>Prepare</h3><p>Clean, transform, validate, and structure the data.</p></li>
+                <li><span>04</span><h3>Explore</h3><p>Investigate patterns, relationships, and anomalies.</p></li>
+                <li><span>05</span><h3>Analyze</h3><p>Apply statistical and analytical methods.</p></li>
+                <li><span>06</span><h3>Visualize</h3><p>Turn findings into understandable visualizations.</p></li>
+                <li><span>07</span><h3>Decide</h3><p>Translate findings into practical actions.</p></li>
+                <li><span>08</span><h3>Improve</h3><p>Iterate as new data and business requirements emerge.</p></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- DATA QUALITY -->
+    <section class="data-section data-section--dark" id="quality">
+        <div class="container">
+            <div class="section-header data-header--light">
+                <p class="section-subtitle">Data Quality</p>
+                <h2>Good Decisions Depend on Good Data.</h2>
+                <p>Data quality checks are part of the analytical process — we do not claim perfect data quality.</p>
+            </div>
+            <div class="data-quality-grid">
+                <article class="data-mini-card"><i class="bi bi-check-circle" aria-hidden="true"></i><h3>Completeness</h3><p>No critical gaps in required fields.</p></article>
+                <article class="data-mini-card"><i class="bi bi-arrow-repeat" aria-hidden="true"></i><h3>Consistency</h3><p>Uniform formats and definitions across sources.</p></article>
+                <article class="data-mini-card"><i class="bi bi-bullseye" aria-hidden="true"></i><h3>Accuracy</h3><p>Values reflect real-world events correctly.</p></article>
+                <article class="data-mini-card"><i class="bi bi-shield-check" aria-hidden="true"></i><h3>Validity</h3><p>Data conforms to expected rules and ranges.</p></article>
+                <article class="data-mini-card"><i class="bi bi-clock" aria-hidden="true"></i><h3>Timeliness</h3><p>Data is current enough for the decision at hand.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="webdev-faq data-faq">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Got Questions?</p>
+                <h2>Frequently Asked Questions</h2>
+                <p>Clear answers about data science and analytics with HAIZON.</p>
+            </div>
+            <div class="faq-accordion" id="faqAccordion">
+                <div class="faq-accordion-item active">
+                    <button class="faq-accordion-trigger" aria-expanded="true">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">What is the difference between data science and data analytics?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Data analytics often focuses on examining existing data to understand performance and patterns, while data science can include analytics plus statistical methods, predictive modeling, experimentation, and more advanced analytical approaches.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">Can you build custom dashboards?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Yes. Dashboards can be designed around the metrics, workflows, users, filters, and reporting requirements of an organization.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">Can you work with our existing database?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Yes. Depending on the system and access available, data can be analyzed from existing databases, APIs, files, or other supported sources.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">Can you clean and prepare our data?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Yes. Data preparation can include cleaning, transformation, validation, normalization, and structuring data for analysis.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">Can you provide forecasting?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Forecasting can be developed where historical data contains useful patterns and is suitable for the intended analytical problem.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">Can analytics be integrated into our existing software?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Yes. Analytics and dashboards can be integrated into existing software through APIs, database connections, or embedded interfaces depending on the architecture.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">Can you combine analytics with machine learning?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Yes. Analytics can provide the understanding and preparation needed before predictive or machine learning systems are developed.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-trigger" aria-expanded="false">
+                        <div class="faq-trigger-content">
+                            <svg class="faq-help-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <span class="faq-question-text">Can you connect analytics with automation?</span>
+                        </div>
+                        <div class="faq-chevron-wrap"><svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+                    </button>
+                    <div class="faq-accordion-content"><div class="faq-answer-wrapper"><div class="faq-answer-card">
+                        <p>Yes. Analytical insights can be connected to defined workflows and automation where doing so provides practical value.</p>
+                        <div class="faq-message-icon-wrap"><svg class="faq-message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                    </div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="data-final-cta">
+        <div class="container">
+            <div class="automation-cta">
+                <p class="section-subtitle" style="color: var(--golden-amber); margin-bottom: 0.75rem;">Make Your Data Useful</p>
+                <h3 class="automation-cta-title">Have Data But Need Clearer Answers?</h3>
+                <p class="automation-cta-text">Tell us what data you have, what you want to understand, and what decisions you need to make. We'll help determine the right analytical approach.</p>
+                <div class="automation-cta-actions">
+                    <a href="#contact" class="btn btn-primary">Discuss Your Data Project</a>
+                    <a href="machine-learning.html" class="btn btn-secondary automation-btn-secondary">Explore AI Solutions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+        <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-intro">
+                    <p class="section-subtitle">Get In Touch</p>
+                    <h2>Let's Build Something That Matters.</h2>
+                    <p class="contact-lead">Have a business challenge, software idea, or AI project in mind? Tell us what you're trying to achieve and we'll help shape the right solution.</p>
+                    <ul class="contact-cards">
+                        <li class="contact-card">
+                            <div class="contact-card-icon" aria-hidden="true"><i class="bi bi-envelope"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Email</span>
+                                <a class="contact-card-value" href="mailto:info@haizon.com">info@haizon.com</a>
+                            </div>
+                        </li>
+                        <li class="contact-card">
+                            <div class="contact-card-icon" aria-hidden="true"><i class="bi bi-telephone"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Phone</span>
+                                <a class="contact-card-value" href="tel:+15551234567">+1 (555) 123-4567</a>
+                            </div>
+                        </li>
+                        <li class="contact-card">
+                            <div class="contact-card-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Location</span>
+                                <span class="contact-card-value">123 Innovation Street, Tech City, TC 12345</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="contact-social social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    </div>
+                </div>
+                <div class="contact-panel">
+                    <span class="contact-panel-eyebrow">Start a Conversation</span>
+                    <h3>Tell us about your project</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="contact-form-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Work Email</label>
+                                <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@company.com">
+                            </div>
+                            <div class="form-group form-group--full">
+                                <label for="company">Company / Organization</label>
+                                <input type="text" id="company" name="company" autocomplete="organization" placeholder="Company name">
+                            </div>
+                            <div class="form-group">
+                                <label for="projectType">Project Type</label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="" disabled>Select a service</option>
+                                    <option value="automation">AI &amp; Business Automation</option>
+                                    <option value="ml">Machine Learning / AI</option>
+                                    <option value="web">Custom Web Development</option>
+                                    <option value="software">Software Solutions</option>
+                                    <option value="data" selected>Data Science &amp; Analytics</option>
+                                    <option value="uiux">UI/UX &amp; Digital Products</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Budget / Project Scope</label>
+                                <select id="budget" name="budget">
+                                    <option value="" disabled selected>Select a range</option>
+                                    <option value="unsure">Not sure yet</option>
+                                    <option value="small">Small project</option>
+                                    <option value="medium">Medium project</option>
+                                    <option value="large">Large / Enterprise</option>
+                                    <option value="discuss">Let's discuss</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-group--full">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required placeholder="Tell us about your project, challenge, or idea..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="form-submit">Discuss Your Project <span aria-hidden="true">→</span></button>
+                    </form>
+                    <p class="contact-trust">Tell us what you're building. We'll take it from there.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-stable">
+        <div class="footer-accent" aria-hidden="true"></div>
+        <div class="footer-content">
+            <div class="footer-section footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="HAIZON INNOVATIONS" class="footer-logo-img" width="180" height="48" decoding="async">
+                </div>
+                <p class="footer-pillars">AI • Software • Data</p>
+                <p>Building intelligent digital solutions for modern businesses.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Services</h3>
+                <ul class="footer-links">
+                    <li><a href="automation.html"><span>AI &amp; Business Automation</span></a></li>
+                    <li><a href="machine-learning.html"><span>Machine Learning, Deep Learning &amp; NLP</span></a></li>
+                    <li><a href="custom-web-development.html"><span>Custom Web Development</span></a></li>
+                    <li><a href="software-solutions.html"><span>Software Solutions</span></a></li>
+                    <li><a href="data-science.html"><span>Data Science &amp; Analytics</span></a></li>
+                    <li><a href="ui-ux.html"><span>UI/UX &amp; Digital Products</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#about"><span>About</span></a></li>
+                    <li><a href="index.html#why-us"><span>Why HAIZON</span></a></li>
+                    <li><a href="index.html#portfolio"><span>Portfolio</span></a></li>
+                    <li><a href="#contact"><span>Contact</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-connect">
+                <h3 class="footer-title">Connect</h3>
+                <ul class="contact-info">
+                    <li>
+                        <span class="connect-label">Email</span>
+                        <a href="mailto:info@haizon.com">info@haizon.com</a>
+                    </li>
+                    <li>
+                        <span class="connect-label">Phone</span>
+                        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                    </li>
+                    <li>
+                        <span class="connect-label">Location</span>
+                        <span>123 Innovation Street, Tech City, TC 12345</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2026 <span class="brand-highlight">HAIZON INNOVATIONS</span>. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="#">Terms of Service</a>
+                    <span class="separator">•</span>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">↑</button>
+    <a href="https://wa.me/+923415482209?text=Hello%20HAIZON%20INNOVATIONS,%20I%20would%20like%20to%20know%20more%20about%20your%20services"
+        target="_blank" rel="noopener noreferrer" class="whatsapp-button" aria-label="Contact us on WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.982-3.648-.239-.375a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <span class="whatsapp-pulse"></span>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <script src="index.js"></script>
+    <script src="data-science.js"></script>
+</body>
+
+</html>
