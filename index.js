@@ -19,7 +19,7 @@ const throttle = (fn) => {
 };
 
 const LOGO_TOP = 'assets/images/logo.png';
-const LOGO_SCROLLED = 'assets/images/logo1.jpg';
+const LOGO_SCROLLED = 'assets/images/logo1.JPG';
 
 const initScrollHandlers = () => {
     const navbar = document.getElementById('navbar');
